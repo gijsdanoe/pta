@@ -1,0 +1,260 @@
+1a 
+II.
+2b
+"When you combine the ideas of whistles at night, the presence of
+a band of gipsies who are on intimate terms with this old doctor,
+the fact that we have every reason to believe that the doctor has
+an interest in preventing his stepdaughter's marriage, the dying
+allusion to a band, and, finally, the fact that Miss Helen Stoner
+heard a metallic clang, which might have been caused by one of
+those metal bars that secured the shutters falling back into its
+place, I think that there is good ground to think that the
+mystery may be cleared along those lines."
+1c
+2 38
+3 235
+4 227
+5 249
+6 308
+7 301
+8 349
+9 310
+10 301
+11 294
+12 273
+13 201
+14 205
+15 218
+16 196
+17 208
+18 175
+19 180
+20 204
+21 154
+22 159
+23 136
+24 156
+25 115
+26 103
+27 101
+28 125
+29 95
+30 109
+31 82
+32 85
+33 72
+33 72
+34 57
+35 73
+36 86
+37 52
+38 47
+39 52
+40 44
+41 28
+42 41
+43 31
+44 37
+45 34
+46 32
+47 23
+48 17
+49 15
+50 19
+51 17
+52 16
+53 18
+54 15
+55 7
+56 7
+57 5
+58 9
+59 4
+60 3
+61 5
+62 8
+63 5
+64 5
+65 8
+66 4
+67 5
+69 1
+70 3
+71 3
+72 4
+73 1
+74 2
+75 2
+76 5
+78 1
+79 2
+80 2
+81 2
+83 1
+88 1
+89 1
+93 2
+95 1
+100 1
+102 1
+104 1
+113 1
+
+1d
+18.39877031181379
+
+2a
+Number of char types: 81
+
+['\n', ' ', '!', '"', '&', "'", '(', ')', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G',
+'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'à', 'â', 'è', 'é']
+
+2b
+Number of word types: 6627
+the list was too long to view in my terminal and thus not suitable to paste in this document. It can be viewed by executing ./exercise2.py
+
+2c
+94683 ' '
+52863 'e'
+37842 't'
+34374 'a'
+33200 'o'
+28378 'n'
+27803 'h'
+26432 's'
+26366 'i'
+24304 'r'
+18349 'd'
+16854 'l'
+13070 'u'
+12649 '
+'
+11055 'm'
+10508 'w'
+10172 'c'
+8976 'y'
+8785 'f'
+7733 'g'
+
+2d
+
+20 Most common character-level bigrams:
+
+16536 ('e', ' ')
+12954 (' ', 't')
+11765 ('t', 'h')
+11472 ('h', 'e')
+9948 (' ', 'a')
+9539 ('d', ' ')
+9149 ('t', ' ')
+8237 ('s', ' ')
+7611 ('i', 'n')
+7096 ('e', 'r')
+6767 (' ', 'h')
+6757 (' ', 'w')
+6581 (',', ' ')
+6448 ('a', 'n')
+6233 (' ', 's')
+6172 ('n', ' ')
+5730 ('h', 'a')
+5641 ('o', 'u')
+5590 ('r', 'e')
+5210 (' ', 'i')
+20 Most common character-level trigrams:
+
+8712 (' ', 't', 'h')
+7037 ('t', 'h', 'e')
+6338 ('h', 'e', ' ')
+3384 ('n', 'd', ' ')
+3369 ('a', 'n', 'd')
+3283 (' ', 'a', 'n')
+3073 ('e', 'd', ' ')
+2940 (' ', 't', 'o')
+2811 ('a', 't', ' ')
+2762 ('i', 'n', 'g')
+2705 ('t', 'o', ' ')
+2639 (' ', 'o', 'f')
+2468 (' ', 'h', 'a')
+2428 ('i', 's', ' ')
+2420 (' ', 'i', 'n')
+2411 ('o', 'f', ' ')
+2264 ('a', 's', ' ')
+2244 (' ', 'I', ' ')
+2230 ('h', 'a', 't')
+2206 ('n', 'g', ' ')
+20 Most common word-level unigrams:
+
+14 'he asked.'
+13 'I asked.'
+12 '"Yes."'
+10 'said he.'
+8 '"Yes.'
+8 '"Quite so.'
+8 'asked Holmes.'
+8 '"Thank you.'
+7 'Ha!'
+7 '"Ha!'
+6 'he cried.'
+6 '"Yes, sir.'
+6 'I cried.'
+5 '"No.'
+5 '"Indeed!'
+5 '"No."'
+4 '"Very good.'
+4 '"Certainly."'
+4 '"What!'
+4 '"Precisely.'
+20 Most common word-level bigrams:
+
+1 ('In this case I found her biography\nsandwiched in between that of a Hebrew rabbi and that of a\nstaff-commander who had written a monograph upon the deep-sea\nfishes.', '"Let me see!"')
+1 ('"Why, dear me, it sounds quite\nhollow!"', 'he remarked, looking up in surprise.')
+1 ('"Nothing, until my uncle here began to speak loudly.', 'I heard\nthat, and I came down."')
+1 ('I should not be very much surprised if this were\nhe whose step I hear now upon the stair.', 'I think, Watson, that it\nwould be as well for you to have your
+pistol ready."')
+1 ('Well, Watson,\nwe shall see who will win in the long run.', 'I am going out now!"')
+1 ('"We must have a cab."', '"No, my brougham is waiting."')
+1 ('A precious stone.', 'It cuts into glass as though\nit were putty."')
+1 ('The whole garden has\nalready been minutely examined."', '"Now, my dear sir," said Holmes, "is it not obvious to you now\nthat this matter really strikes very much deeper than either you\nor the police were at first inclined to think?')
+1 ('When the commissionaire had gone, Holmes took up the stone and\nheld it against the light.', '"It\'s a bonny thing," said he.')
+1 ('I deserve\nto be kicked from here to Charing Cross.', 'But I think I have the\nkey of the affair now."')
+1 ('"\'Photography is one of my hobbies,\' said he.', "'I have made my\ndark room up there.")
+1 ('"\'Why, what on earth does this mean, John?\'', 'he stammered.')
+1 ('"Do not go asleep; your very life may depend upon it.', 'Have your\npistol ready in case we should need it.')
+1 ('Step into my room here."', 'It was a small,\noffice-like room, with a huge ledger upon the table, and a\ntelephone projecting from the wall.')
+1 ('"I felt angry at having been tricked by so elaborate a story as\nthat which he had told me.', "'I was admiring your fuller's-earth,'\nsaid I; 'I think that I
+should be better able to advise you as to\nyour machine if I knew what the exact purpose was for which it\nwas used.'")
+1 ('Those are the principal points about\nwhich I wished to be absolutely clear.', 'We shall now have a little\nsupper and then retire, for we may have a very busy day\nto-morrow."')
+1 ('Had he observed a\ncarriage the night before waiting for me?', 'No, he had not.')
+1 ('You may know the strict principles of her\nfamily.', 'She is herself the very soul of delicacy.')
+1 ('a murderous attack?"', '"Very murderous indeed."')
+1 ('What\nd\'you want to frighten a chap for?"', 'He sank his face onto his\narms and began to sob in a high treble key.')
+20 Most common word-level trigrams:
+
+1 ('There is so keen a sympathy between us that I\nshould know if evil came upon him.', 'On the very day that I saw him\nlast he cut himself in the bedroom, and yet I in the dining-room\nrushed upstairs instantly with the utmost certainty that\nsomething had happened.', 'Do you think that I would respond to such\na trifle
+and yet be ignorant of his death?"')
+1 ('"Not at all.', 'Drink this."', 'I dashed some brandy into the water,\nand the colour began to come back to his bloodless cheeks.')
+1 ('"Frank here\nand I met in \'84, in McQuire\'s camp, near the Rockies, where pa\nwas working a claim.', 'We were engaged to each other, Frank and I;\nbut then
+one day father struck a rich pocket and made a pile,\nwhile poor Frank here had a claim that petered out and came to\nnothing.', "The richer pa grew the poorer was Frank; so at last pa\nwouldn't hear of our engagement lasting any longer, and he took\nme away to 'Frisco.")
+1 ('"How did you deduce the select?"', '"By the select prices.', 'Eight shillings for a bed and eightpence\nfor a glass of sherry pointed to one of the most expensive\nhotels.')
+1 ('"It was a confession," I ejaculated.', '"No, for it was followed by a protestation of innocence."', '"Coming on the top of such a damning series of events, it was at\nleast a most suspicious remark."')
+1 ('"Then I shall certainly come."', '"It is very kind of you."', '"You speak of danger.')
+1 ('Hum!', 'Posted to-day in\nGravesend by a man with a dirty thumb.', 'Ha!')
+1 ('"10th.', 'John Swain cleared.', '"12th.')
+1 ('"I fear not."', '"Then what has happened to him?"', '"You will leave that question in my hands.')
+1 ('Sherlock\nHolmes was pacing up and down the platform, his tall, gaunt\nfigure made even gaunter and taller by his long grey\ntravelling-cloak and close-fitting cloth cap.', '"It is really very good of you to come, Watson," said he.', '"It\nmakes a considerable difference to me, having someone with me on\nwhom I can thoroughly rely.')
+1 ('"I am glad to hear you say so," said Holmes gravely.', '"I would have spoken now had it not been for my dear girl.', 'It\nwould break her heart--it will break her heart when she hears\nthat I am arrested."')
+1 ('Our client of the morning had hurried forward to meet us with a\nface which spoke her joy.', '"I have been waiting so eagerly for\nyou," she cried, shaking hands with us warmly.', '"All has turned\nout splendidly.')
+1 ('"Not yet."', '"But you have hopes?"', '"I have hopes."')
+1 ('"Coming on the top of such a damning series of events, it was at\nleast a most suspicious remark."', '"On the contrary," said Holmes, "it is the brightest rift which I\ncan at present see in the clouds.', 'However innocent he might be,\nhe could not be such an absolute imbecile as not to see that the\ncircumstances were very black against him.')
+1 ('"Oh, you must not discourage me, Mr. Holmes.', 'I know that all is\nwell with him.', 'There is so keen a sympathy between us that I\nshould know if evil came
+upon him.')
+1 ('The unusual\nsalary, the curious conditions, the light duties, all pointed to\nsomething abnormal, though whether a fad or a plot, or whether\nthe man were a
+philanthropist or a villain, it was quite beyond\nmy powers to determine.', 'As to Holmes, I observed that he sat\nfrequently for half an hour on end, with knitted brows and an\nabstracted air, but he swept the matter away with a wave of his\nhand when I mentioned it.', '"Data!')
+1 ('Only one man knew my secret.', 'He was the keeper of a\nlow den in which I used to lodge in Swandam Lane, where I could\nevery morning emerge as a squalid beggar and in the evenings\ntransform myself into a well-dressed man about town.', 'This fellow,\na Lascar, was well paid by me for his rooms, so that I knew that\nmy secret was safe in his possession.')
+1 ('"A confidential servant?"', '"A little too much so.', 'It seemed to me that her mistress allowed\nher to take great liberties.')
+1 ('"Sarasate plays at the St. James\'s Hall this afternoon," he\nremarked.', '"What do you think, Watson?', 'Could your patients spare\nyou for a few hours?"')
+1 ('It was all done in an instant, and\nthere was the gentleman thanking me on the one side and the lady\non the other, while the clergyman beamed on me in front.', 'It was\nthe most preposterous position in which I ever found myself in my\nlife, and it was the thought of it that started me laughing just\nnow.', 'It seems
+that there had been some informality about their\nlicense, that the clergyman absolutely refused to marry them\nwithout a witness of some sort, and that my luckyappearance\nsaved the bridegroom from having to sally out into the streets in\nsearch of a best man.')
+
+
+this information could be useful for getting the gist of what the text is aabout and what opinions are aiming towards.
