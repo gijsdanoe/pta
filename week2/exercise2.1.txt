@@ -1,0 +1,72 @@
+2.1
+
+Penn Treebank:
+
+Peter - NNP
+really - RB
+liked - VBD
+the - DT
+movies - NNS
+and - CC
+warm - JJ
+pop-corn - NN 
+. - .
+He - PRP
+would - MD
+never - RB
+bring - VB
+Mira - NNP
+with - IN
+him - PRP
+, - ,
+though - RB
+. - .
+
+Brown:
+
+Peter - NP
+really - RB
+liked - VBD
+the - DT
+movies - NNS
+and - CC
+warm - JJ
+pop-corn - NN 
+. - .
+He - PRP
+would - MD
+never - RB
+bring - VB
+Mira - NP
+with - IN
+him - PRP
+, - ,
+though - RB
+. - .
+
+Universal:
+
+Peter - NOUN
+really - ADV
+liked - VERB
+the - DET
+movies - NOUN
+and - CONJ
+warm - ADJ
+pop-corn - NOUN 
+. - .
+He - PRON
+would - NOUN
+never - PRT
+bring - NOUN
+Mira - NOUN
+with - ADP
+him - PRON
+, - .
+though - PRT
+. - .
+
+2.4
+
+
+
