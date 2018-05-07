@@ -1,0 +1,39 @@
+Exercise 1
+
+
+Exercise 1.1
+
+1a. 6 (child, wife (2x), children, mother, father)
+1b. 2 (disease, insanity)
+1c. 4 (mathematician, mathematics (2x), mathematical)
+
+Exercise 1.2
+The top 25 noun hypernyms are:
+ [(Synset('enzyme.n.01'), 10), (Synset('expert.n.01'), 8), (Synset('tone.n.01'), 6), (Synset('causal_agent.n.01'), 6), (Synset('paper_money.n.01'), 6), (Synset('comment.n.02'), 6), (Synset('written_record.n.01'), 6), (Synset('musical_notation.n.01'), 6), (Synset('person.n.01'), 6), (Synset('personal_letter.n.01'), 6), (Synset('debt_instrument.n.01'), 6), (Synset('air.n.03'), 6), (Synset('high_status.n.01'), 6), (Synset('time_period.n.01'), 5), (Synset('instrument.n.01'), 5), (Synset('motor.n.01'), 5), (Synset('machine.n.01'), 5), (Synset('self-propelled_vehicle.n.01'), 5), (Synset('organization.n.01'), 4), (Synset('state.n.02'), 4), (Synset('gregorian_calendar_month.n.01'), 3), (Synset('activity.n.01'), 3), (Synset('discipline.n.01'), 3), (Synset('social_group.n.01'), 3), (Synset('male_aristocrat.n.01'), 2)]
+
+There are 42 lemmas with only one hypernym.
+Some examples are:
+[('Ada', Synset('adenosine_deaminase.n.01')), ('Countess', Synset('countess.n.01')), ('Lovelace', Synset('lovelace.n.01')), ('December', Synset('december.n.01'))]
+
+There are 63 lemmas with more than one hypernym.
+Some examples are:
+[('Augusta', [Synset('augusta.n.01'), Synset('augusta.n.02')]), ('King', [Synset('king.n.01'), Synset('king.n.02'), Synset('baron.n.03'), Synset('king.n.04'), Synset('king.n.05'), Synset('king.n.06'), Synset('king.n.07'), Synset('king.n.08'), Synset('king.n.09'), Synset('king.n.10')]), ('Augusta', [Synset('augusta.n.01'), Synset('augusta.n.02')]), ('writer', [Synset('writer.n.01'), Synset('writer.n.02')])]
+
+The average amount of hypernyms for one lemma is: 2.8181818181818183
+
+Exercise 1.3
+The top 6:
+1 car-automobile (1.0)
+2 coast-shore (0.5)
+3 monk-slave (0.2)
+4 moon-string (0.11)
+5 food-fruit (0.09)
+6 journey-car (0.05)
+
+Our ranking is different than Miller and Charles'. Our top two are the same, however their last two are our number 3 and 4 and our last two are theirs. This is very interesting because we personally think food and fruit and journey and car are closer to each other than monk and slave and moon and string.
+
+
+Exercise 2
+
+
+

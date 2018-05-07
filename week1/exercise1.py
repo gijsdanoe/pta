@@ -3,7 +3,7 @@
 # author: Group 3
 
 import nltk
-
+nltk.download('gutenberg')
 # access the corpus we want to use
 from nltk.corpus import gutenberg
 
@@ -24,7 +24,7 @@ def main():
 	print(hamlet_sents[:4])
 
 	# read a text and print some of it
-	path = "../nltk_data/corpora/gutenberg/shakespeare-hamlet.txt"
+	path = "/home/s3494888/nltk_data/corpora/gutenberg/shakespeare-hamlet.txt"
 	f = open(path)
 	hamlet = f.read()
 	f.close()
