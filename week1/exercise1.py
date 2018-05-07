@@ -3,7 +3,7 @@
 # author: Group 3
 
 import nltk
-
+nltk.download('gutenberg')
 # access the corpus we want to use
 from nltk.corpus import gutenberg
 
