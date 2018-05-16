@@ -1,0 +1,58 @@
+the ouput of measures.py shows the following:
+
+
+
+Total agreed finds: 174
+Total finds: 228
+Total tokens: 2100
+
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1872>  35 |
+YES |   19 <174>|
+----+-----------+
+(row = reference; col = test)
+
+TP: 2046 Counter({'NO': 1872, 'YES': 174})
+FN: 54 Counter({'NO': 35, 'YES': 19})
+FP: 54 Counter({'YES': 35, 'NO': 19})
+
+NO 0.985781990521327
+YES 0.8656716417910447
+
+
+
+    |    C    C    E    N    N    O    P    P    S |
+    |    I    O    N    A    O    R    E    R    P |
+    |    T    U    T    T    N    G    R    G    O |
+----+----------------------------------------------+
+CIT |  <15>   .    .    4    .    .    .    .    . |
+COU |    1  <42>   .    .    9    5    .    .    . |
+ENT |    .    .   <.>   .    .    .    .    .    . |
+NAT |    .    .    .   <6>   4    .    .    .    . |
+NON |    .    2    5    5<1872>  14    6    .    3 |
+ORG |    .    .    1    .    4  <51>   .    1    . |
+PER |    .    .    .    .    2    .  <48>   .    . |
+PRG |    .    .    .    .    .    .    .   <.>   . |
+SPO |    .    .    .    .    .    .    .    .   <.>|
+----+----------------------------------------------+
+(row = reference; col = test)
+
+TP: 2034 Counter({'NON': 1872, 'ORG': 51, 'PER': 48, 'COU': 42, 'CIT': 15, 'NAT': 6, 'PRG': 0, 'ENT': 0, 'SPO': 0})
+FN: 66 Counter({'NON': 35, 'COU': 15, 'ORG': 6, 'NAT': 4, 'CIT': 4, 'PER': 2, 'PRG': 0, 'ENT': 0, 'SPO': 0})
+FP: 66 Counter({'ORG': 19, 'NON': 19, 'NAT': 9, 'PER': 6, 'ENT': 6, 'SPO': 3, 'COU': 2, 'PRG': 1, 'CIT': 1})
+
+CIT 0.8571428571428572
+COU 0.8316831683168316
+ENT 0
+NAT 0.48
+NON 0.985781990521327
+ORG 0.8031496062992126
+PER 0.923076923076923
+PRG 0
+SPO 0
+
+
+
