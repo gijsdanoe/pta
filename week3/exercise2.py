@@ -15,7 +15,7 @@ def main():
 	lemmatizer = WordNetLemmatizer()
 	noun_lemmas = []
 
-	st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
+	st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
 
 
 	l = st.tag(raw.split())
