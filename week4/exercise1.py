@@ -13,7 +13,7 @@ def main():
                 for line in myfile:
                     columns = line.split()
                     if len(columns) > 1:
-						columns.append(pos_tag(word_tokenize(columns[3]))[0][1])
+                                                columns.append(pos_tag(word_tokenize(columns[3]))[0][1])
                         posfile.write(" ".join(columns))
                         posfile.write("\n")
 
