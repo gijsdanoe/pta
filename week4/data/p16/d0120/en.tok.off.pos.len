@@ -27,10 +27,10 @@
 166 172 2009 Sunday NNP
 173 175 2010 in IN
 176 181 2011 Qalat NN CIT https://en.wikipedia.org/wiki/Qalati_Ghilji
-182 190 2012 district NN https://en.wikipedia.org/wiki/Qalati_Ghilji
+182 190 2012 district NN
 191 193 2013 of IN
 194 199 2014 Zabul NN COU https://en.wikipedia.org/wiki/Zabul_Province
-200 208 2015 province NN https://en.wikipedia.org/wiki/Zabul_Province
+200 208 2015 province NN
 208 209 2016 . .
 211 214 3001 The DT
 215 224 3002 statement NN
