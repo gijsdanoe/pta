@@ -7,13 +7,16 @@ import os
 def main():
     set1  = []
     set2 = []
+    set3 = []
     list1 = []
     list2 = []
+    list3 = [] 
 
-    for folder in os.listdir("/home/lennart/projectta/week5/data/"):
-        for folder2 in os.listdir("/home/lennart/projectta/week5/data/" + folder):
-            myfile = open("/home/lennart/projectta/week5/data/" + folder + "/" + folder2 + "/en.tok.off.pos.lennart", "r")
-            myfile2 = open("/home/lennart/projectta/week5/data/" + folder + "/" + folder2 + "/en.tok.off.pos.marieke", "r")
+    for folder in os.listdir("/home/lennart/projecttextanalyse/week4/data/"):
+        for folder2 in os.listdir("/home/lennart/projecttextanalyse/week4/data/" + folder):
+            myfile = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.len", "r")
+            myfile2 = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.gijs", "r")
+            myfile3 = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.tho", "r")
             for line in myfile:
                 columns = line.split()
                 if len(columns) < 6:
@@ -30,30 +33,58 @@ def main():
                 else:
                     set2.append(columns[5])
                     list2.append("YES")
+            for line in myfile3:
+                columns = line.split()
+                if len(columns) < 6:
+                    set3.append("NON")
+                    list3.append("NO")
+                else:
+                    set3.append(columns[5])
+                    list3.append("YES")
 
     total = 0
     finds = 0
     agr_find = 0
     for i in range(len(set1)):
-        if set1[i] != "NON" and set2[i] !="NON":
+        if set1[i] != "NON" and set2[i] !="NON" and set3[i] != "NON":
             agr_find += 1
             finds += 1
             total += 1
-        elif set1[i] != "NON" and set2[i] == "NON":
+        elif set1[i] != "NON" and set2[i] == "NON" and set3[i] == "NON":
             finds += 1
             total += 1
-        elif set1[i] == "NON" and set2[i] != "NON":
+        elif set1[i] == "NON" and set2[i] != "NON" and set3[i] == "NON":
+            finds += 1
+            total += 1
+        elif set1[i] == "NON" and set2[i] == "NON" and set3[i] != "NON":
+            finds += 1
+            total += 1
+        elif set1[i] != "NON" and set2[i] != "NON" and set3[i] == "NON":
+            finds += 1
+            total += 1
+        elif set1[i] == "NON" and set2[i] != "NON" and set3[i] != "NON":
+            finds += 1
+            total += 1
+        elif set1[i] != "NON" and set2[i] == "NON" and set3[i] != "NON":
             finds += 1
             total += 1
         else:
             total += 1
               
     print("Total agreed finds: {0}\nTotal finds: {1}\nTotal tokens: {2}\n".format(str(agr_find),str(finds),str(total)))
-
+    print("Lennart vs Gijs")
     two_int(list1, list2)
+    print("Lennart vs Thomas")
+    two_int(list1, list3)
+    print("Gijs vs Thomas")
+    two_int(list2, list3)
     print("\n\n")
+    print("Lennart vs Gijs")
     two_cla(set1, set2)
-
+    print("Lennart vs Thomas")
+    two_cla(set1, set3)
+    print("Gijs vs Thomas")
+    two_cla(set2, set3)
 
 def two_int(list1, list2):
     matrix = ConfusionMatrix(list1, list2)
@@ -85,6 +116,7 @@ def two_int(list1, list2):
             precision = true_positives[i] / float(true_positives[i]+false_positives[i])
             recall = true_positives[i] / float(true_positives[i]+false_negatives[i])
             fscore = 2 * (precision * recall) / float(precision + recall)
+        print("fscore")
         print(i, fscore)
 
 

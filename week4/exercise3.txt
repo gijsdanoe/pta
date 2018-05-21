@@ -1,58 +1,292 @@
-the ouput of measures.py shows the following:
+Total agreed finds: 193
+Total finds: 285
+Total tokens: 1992
 
-
-
-Total agreed finds: 174
-Total finds: 228
-Total tokens: 2100
-
+Lennart vs Gijs
     |         Y |
     |    N    E |
     |    O    S |
 ----+-----------+
- NO |<1872>  35 |
-YES |   19 <174>|
+ NO |<1736>   4 |
+YES |   15 <237>|
 ----+-----------+
 (row = reference; col = test)
 
-TP: 2046 Counter({'NO': 1872, 'YES': 174})
-FN: 54 Counter({'NO': 35, 'YES': 19})
-FP: 54 Counter({'YES': 35, 'NO': 19})
+TP: 1973 Counter({'NO': 1736, 'YES': 237})
+FN: 19 Counter({'YES': 15, 'NO': 4})
+FP: 19 Counter({'NO': 15, 'YES': 4})
 
-NO 0.985781990521327
-YES 0.8656716417910447
-
-
-
-    |    C    C    E    N    N    O    P    P    S |
-    |    I    O    N    A    O    R    E    R    P |
-    |    T    U    T    T    N    G    R    G    O |
-----+----------------------------------------------+
-CIT |  <15>   .    .    4    .    .    .    .    . |
-COU |    1  <42>   .    .    9    5    .    .    . |
-ENT |    .    .   <.>   .    .    .    .    .    . |
-NAT |    .    .    .   <6>   4    .    .    .    . |
-NON |    .    2    5    5<1872>  14    6    .    3 |
-ORG |    .    .    1    .    4  <51>   .    1    . |
-PER |    .    .    .    .    2    .  <48>   .    . |
-PRG |    .    .    .    .    .    .    .   <.>   . |
-SPO |    .    .    .    .    .    .    .    .   <.>|
-----+----------------------------------------------+
+fscore
+NO 0.9945574334001718
+fscore
+YES 0.9614604462474645
+Lennart vs Thomas
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1711>  29 |
+YES |   58 <194>|
+----+-----------+
 (row = reference; col = test)
 
-TP: 2034 Counter({'NON': 1872, 'ORG': 51, 'PER': 48, 'COU': 42, 'CIT': 15, 'NAT': 6, 'PRG': 0, 'ENT': 0, 'SPO': 0})
-FN: 66 Counter({'NON': 35, 'COU': 15, 'ORG': 6, 'NAT': 4, 'CIT': 4, 'PER': 2, 'PRG': 0, 'ENT': 0, 'SPO': 0})
-FP: 66 Counter({'ORG': 19, 'NON': 19, 'NAT': 9, 'PER': 6, 'ENT': 6, 'SPO': 3, 'COU': 2, 'PRG': 1, 'CIT': 1})
+TP: 1905 Counter({'NO': 1711, 'YES': 194})
+FN: 87 Counter({'YES': 58, 'NO': 29})
+FP: 87 Counter({'NO': 58, 'YES': 29})
 
-CIT 0.8571428571428572
-COU 0.8316831683168316
-ENT 0
-NAT 0.48
-NON 0.985781990521327
-ORG 0.8031496062992126
-PER 0.923076923076923
-PRG 0
-SPO 0
+fscore
+NO 0.9752066115702478
+fscore
+YES 0.8168421052631579
+Gijs vs Thomas
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1721>  30 |
+YES |   48 <193>|
+----+-----------+
+(row = reference; col = test)
+
+TP: 1914 Counter({'NO': 1721, 'YES': 193})
+FN: 78 Counter({'YES': 48, 'NO': 30})
+FP: 78 Counter({'NO': 48, 'YES': 30})
+
+fscore
+NO 0.9778409090909091
+fscore
+YES 0.831896551724138
 
 
 
+Lennart vs Gijs
+                                               |                                            h           |
+                                               |                                            t           |
+                                               |                                            t         h |
+                                               |                                            p    h    t |
+                                               |                                            s    t    t |
+                                               |                                            :    t    p |
+                                               |                                            /    p    s |
+                                               |                                            /    s    : |
+                                               |                                            e    :    / |
+                                               |                                            n    /    / |
+                                               |                                            .    /    e |
+                                               |                                            w    e    n |
+                                               |                                            i    n    . |
+                                               |                                            k    .    w |
+                                               |                                            i    w    i |
+                                               |                                            p    i    k |
+                                               |                                            e    k    i |
+                                               |                                            d    i    p |
+                                               |                                            i    p    e |
+                                               |                                            a    e    d |
+                                               |                                            .    d    i |
+                                               |                                            o    i    a |
+                                               |                                            r    a    . |
+                                               |                                            g    .    o |
+                                               |                                            /    o    r |
+                                               |                                            w    r    g |
+                                               |                                            i    g    / |
+                                               |                                            k    /    w |
+                                               |                                            i    w    i |
+                                               |                                            /    i    k |
+                                               |                                            A    k    i |
+                                               |                                            r    i    / |
+                                               |                                            a    /    Z |
+                                               |                                            b    Q    a |
+                                               |                                            _    a    b |
+                                               |                                            C    l    u |
+                                               |                                            o    a    l |
+                                               |                                            n    t    _ |
+                                               |                                            t    i    P |
+                                               |                                            r    _    r |
+                                               |                                            a    G    o |
+                                               |                                            c    h    v |
+                                               |                                            t    i    i |
+                                               |    A    C    C    E    N    N    O    P    o    l    n |
+                                               |    N    I    O    N    A    O    R    E    r    j    c |
+                                               |    I    T    U    T    T    N    G    R    s    i    e |
+-----------------------------------------------+--------------------------------------------------------+
+                                           ANI |   <2>   .    .    .    .    .    .    .    .    .    . |
+                                           CIT |    .  <20>   .    .    .    .    .    .    .    .    . |
+                                           COU |    .    1  <45>   .    .    4    .    .    .    .    . |
+                                           ENT |    .    .    .  <28>   .    .    .    .    .    .    . |
+                                           NAT |    .    .    .    .   <1>   7    .    .    .    .    . |
+                                           NON |    .    .    .    2    .<1736>   .    2    .    .    . |
+                                           ORG |    .    .    1    .    .    3  <80>   1    .    .    . |
+                                           PER |    .    .    .    .    .    .    .  <56>   .    .    . |
+https://en.wikipedia.org/wiki/Arab_Contractors |    .    .    .    .    .    1    .    .   <.>   .    . |
+   https://en.wikipedia.org/wiki/Qalati_Ghilji |    .    .    .    .    .    .    .    .    .   <1>   . |
+  https://en.wikipedia.org/wiki/Zabul_Province |    .    .    .    .    .    .    .    .    .    .   <1>|
+-----------------------------------------------+--------------------------------------------------------+
+(row = reference; col = test)
+
+TP: 1970 Counter({'NON': 1736, 'ORG': 80, 'PER': 56, 'COU': 45, 'ENT': 28, 'CIT': 20, 'ANI': 2, 'https://en.wikipedia.org/wiki/Zabul_Province': 1, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 1, 'NAT': 1, 'https://en.wikipedia.org/wiki/Arab_Contractors': 0})
+FN: 22 Counter({'NAT': 7, 'ORG': 5, 'COU': 5, 'NON': 4, 'https://en.wikipedia.org/wiki/Arab_Contractors': 1, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'ENT': 0, 'CIT': 0, 'PER': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'ANI': 0})
+FP: 22 Counter({'NON': 15, 'PER': 3, 'ENT': 2, 'CIT': 1, 'COU': 1, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'ORG': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'https://en.wikipedia.org/wiki/Arab_Contractors': 0, 'ANI': 0, 'NAT': 0})
+
+ANI 1.0
+CIT 0.975609756097561
+COU 0.9375
+ENT 0.9655172413793104
+NAT 0.2222222222222222
+NON 0.9945574334001718
+ORG 0.9696969696969697
+PER 0.9739130434782608
+https://en.wikipedia.org/wiki/Arab_Contractors 0
+https://en.wikipedia.org/wiki/Qalati_Ghilji 1.0
+https://en.wikipedia.org/wiki/Zabul_Province 1.0
+Lennart vs Thomas
+                                               |                                                 h           |
+                                               |                                                 t           |
+                                               |                                                 t         h |
+                                               |                                                 p    h    t |
+                                               |                                                 s    t    t |
+                                               |                                                 :    t    p |
+                                               |                                                 /    p    s |
+                                               |                                                 /    s    : |
+                                               |                                                 e    :    / |
+                                               |                                                 n    /    / |
+                                               |                                                 .    /    e |
+                                               |                                                 w    e    n |
+                                               |                                                 i    n    . |
+                                               |                                                 k    .    w |
+                                               |                                                 i    w    i |
+                                               |                                                 p    i    k |
+                                               |                                                 e    k    i |
+                                               |                                                 d    i    p |
+                                               |                                                 i    p    e |
+                                               |                                                 a    e    d |
+                                               |                                                 .    d    i |
+                                               |                                                 o    i    a |
+                                               |                                                 r    a    . |
+                                               |                                                 g    .    o |
+                                               |                                                 /    o    r |
+                                               |                                                 w    r    g |
+                                               |                                                 i    g    / |
+                                               |                                                 k    /    w |
+                                               |                                                 i    w    i |
+                                               |                                                 /    i    k |
+                                               |                                                 A    k    i |
+                                               |                                                 r    i    / |
+                                               |                                                 a    /    Z |
+                                               |                                                 b    Q    a |
+                                               |                                                 _    a    b |
+                                               |                                                 C    l    u |
+                                               |                                                 o    a    l |
+                                               |                                                 n    t    _ |
+                                               |                                                 t    i    P |
+                                               |                                                 r    _    r |
+                                               |                                                 a    G    o |
+                                               |                                                 c    h    v |
+                                               |                                                 t    i    i |
+                                               |    A    C    C    E    N    N    O    P    P    o    l    n |
+                                               |    N    I    O    N    A    O    R    E    e    r    j    c |
+                                               |    I    T    U    T    T    N    G    R    r    s    i    e |
+-----------------------------------------------+-------------------------------------------------------------+
+                                           ANI |   <2>   .    .    .    .    .    .    .    .    .    .    . |
+                                           CIT |    .  <20>   .    .    .    .    .    .    .    .    .    . |
+                                           COU |    .    1  <42>   .    .    6    1    .    .    .    .    . |
+                                           ENT |    .    .    .  <12>   .   10    4    2    .    .    .    . |
+                                           NAT |    .    .    .    .   <.>   8    .    .    .    .    .    . |
+                                           NON |    .    .    6    2    .<1711>  21    .    .    .    .    . |
+                                           ORG |    2    1    2    .    .   31  <49>   .    .    .    .    . |
+                                           PER |    .    .    .    .    .    .    .  <55>   1    .    .    . |
+                                           Per |    .    .    .    .    .    .    .    .   <.>   .    .    . |
+https://en.wikipedia.org/wiki/Arab_Contractors |    .    .    .    .    .    1    .    .    .   <.>   .    . |
+   https://en.wikipedia.org/wiki/Qalati_Ghilji |    .    .    .    .    .    1    .    .    .    .   <.>   . |
+  https://en.wikipedia.org/wiki/Zabul_Province |    .    .    .    .    .    1    .    .    .    .    .   <.>|
+-----------------------------------------------+-------------------------------------------------------------+
+(row = reference; col = test)
+
+TP: 1891 Counter({'NON': 1711, 'PER': 55, 'ORG': 49, 'COU': 42, 'CIT': 20, 'ENT': 12, 'ANI': 2, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'NAT': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'https://en.wikipedia.org/wiki/Arab_Contractors': 0, 'Per': 0})
+FN: 101 Counter({'ORG': 36, 'NON': 29, 'ENT': 16, 'NAT': 8, 'COU': 8, 'https://en.wikipedia.org/wiki/Zabul_Province': 1, 'PER': 1, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 1, 'https://en.wikipedia.org/wiki/Arab_Contractors': 1, 'CIT': 0, 'ANI': 0, 'Per': 0})
+FP: 101 Counter({'NON': 58, 'ORG': 26, 'COU': 8, 'ENT': 2, 'CIT': 2, 'PER': 2, 'ANI': 2, 'Per': 1, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'NAT': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'https://en.wikipedia.org/wiki/Arab_Contractors': 0})
+
+ANI 0.6666666666666666
+CIT 0.9523809523809523
+COU 0.8399999999999999
+ENT 0.5714285714285714
+NAT 0
+NON 0.9752066115702478
+ORG 0.6124999999999999
+PER 0.9734513274336283
+Per 0
+https://en.wikipedia.org/wiki/Arab_Contractors 0
+https://en.wikipedia.org/wiki/Qalati_Ghilji 0
+https://en.wikipedia.org/wiki/Zabul_Province 0
+Gijs vs Thomas
+                                             |                                                      h |
+                                             |                                                 h    t |
+                                             |                                                 t    t |
+                                             |                                                 t    p |
+                                             |                                                 p    s |
+                                             |                                                 s    : |
+                                             |                                                 :    / |
+                                             |                                                 /    / |
+                                             |                                                 /    e |
+                                             |                                                 e    n |
+                                             |                                                 n    . |
+                                             |                                                 .    w |
+                                             |                                                 w    i |
+                                             |                                                 i    k |
+                                             |                                                 k    i |
+                                             |                                                 i    p |
+                                             |                                                 p    e |
+                                             |                                                 e    d |
+                                             |                                                 d    i |
+                                             |                                                 i    a |
+                                             |                                                 a    . |
+                                             |                                                 .    o |
+                                             |                                                 o    r |
+                                             |                                                 r    g |
+                                             |                                                 g    / |
+                                             |                                                 /    w |
+                                             |                                                 w    i |
+                                             |                                                 i    k |
+                                             |                                                 k    i |
+                                             |                                                 i    / |
+                                             |                                                 /    Z |
+                                             |                                                 Q    a |
+                                             |                                                 a    b |
+                                             |                                                 l    u |
+                                             |                                                 a    l |
+                                             |                                                 t    _ |
+                                             |                                                 i    P |
+                                             |                                                 _    r |
+                                             |                                                 G    o |
+                                             |                                                 h    v |
+                                             |                                                 i    i |
+                                             |    A    C    C    E    N    N    O    P    P    l    n |
+                                             |    N    I    O    N    A    O    R    E    e    j    c |
+                                             |    I    T    U    T    T    N    G    R    r    i    e |
+---------------------------------------------+--------------------------------------------------------+
+                                         ANI |   <2>   .    .    .    .    .    .    .    .    .    . |
+                                         CIT |    .  <21>   .    .    .    .    .    .    .    .    . |
+                                         COU |    .    .  <42>   .    .    3    1    .    .    .    . |
+                                         ENT |    .    .    .  <12>   .   12    4    2    .    .    . |
+                                         NAT |    .    .    .    .   <.>   1    .    .    .    .    . |
+                                         NON |    .    .    7    2    .<1721>  21    .    .    .    . |
+                                         ORG |    2    1    1    .    .   27  <49>   .    .    .    . |
+                                         PER |    .    .    .    .    .    3    .  <55>   1    .    . |
+                                         Per |    .    .    .    .    .    .    .    .   <.>   .    . |
+ https://en.wikipedia.org/wiki/Qalati_Ghilji |    .    .    .    .    .    1    .    .    .   <.>   . |
+https://en.wikipedia.org/wiki/Zabul_Province |    .    .    .    .    .    1    .    .    .    .   <.>|
+---------------------------------------------+--------------------------------------------------------+
+(row = reference; col = test)
+
+TP: 1902 Counter({'NON': 1721, 'PER': 55, 'ORG': 49, 'COU': 42, 'CIT': 21, 'ENT': 12, 'ANI': 2, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'NAT': 0, 'Per': 0})
+FN: 90 Counter({'ORG': 31, 'NON': 30, 'ENT': 18, 'PER': 4, 'COU': 4, 'https://en.wikipedia.org/wiki/Zabul_Province': 1, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 1, 'NAT': 1, 'CIT': 0, 'ANI': 0, 'Per': 0})
+FP: 90 Counter({'NON': 48, 'ORG': 26, 'COU': 8, 'ENT': 2, 'PER': 2, 'ANI': 2, 'CIT': 1, 'Per': 1, 'https://en.wikipedia.org/wiki/Zabul_Province': 0, 'https://en.wikipedia.org/wiki/Qalati_Ghilji': 0, 'NAT': 0})
+
+ANI 0.6666666666666666
+CIT 0.9767441860465117
+COU 0.8749999999999999
+ENT 0.5454545454545455
+NAT 0
+NON 0.9778409090909091
+ORG 0.632258064516129
+PER 0.9482758620689654
+Per 0
+https://en.wikipedia.org/wiki/Qalati_Ghilji 0
+https://en.wikipedia.org/wiki/Zabul_Province 0
