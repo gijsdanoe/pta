@@ -20,7 +20,7 @@
 114 115 1020 . .
 116 125 2001 Officials NNS
 126 129 2002 say VB
-130 138 2003 Humberto NN PER
+130 138 2003 Humberto NN PER 
 139 147 2004 Valbuena NNS PER
 147 148 2005 , ,
 149 150 2006 a DT
@@ -32,10 +32,10 @@
 188 193 2012 Armed VBN ORG
 194 200 2013 Forces NNS ORG
 201 203 2014 of IN
-204 212 2015 Colombia NNP COU
+204 212 2015 Colombia NNP COU https://en.wikipedia.org/wiki/Colombia
 212 213 2016 , ,
 214 216 2017 or CC
-217 221 2018 FARC NN ORG
+217 221 2018 FARC NN ORG https://en.wikipedia.org/wiki/Revolutionary_Armed_Forces_of_Colombia
 221 222 2019 , ,
 223 226 2020 was VBD
 227 233 2021 killed VBN
@@ -45,7 +45,7 @@
 248 254 2025 remote NN
 255 262 2026 jungles NNS
 263 265 2027 of IN
-266 273 2028 Caqueta NN COU
+266 273 2028 Caqueta NN COU https://en.wikipedia.org/wiki/Caquet%C3%A1_Department
 274 279 2029 state NN
 279 280 2030 . .
 281 283 3001 At IN
@@ -59,12 +59,12 @@
 324 327 3009 the DT
 328 333 3010 clash NN
 333 334 3011 . .
-335 343 4001 Colombia NNP COU
+335 343 4001 Colombia NNP COU https://en.wikipedia.org/wiki/Colombia
 343 345 4002 's POS
 346 358 4003 long-running NN
 359 367 4004 conflict NN
 368 372 4005 pits NNS
-373 377 4006 FARC NN ORG
+373 377 4006 FARC NN ORG https://en.wikipedia.org/wiki/Revolutionary_Armed_Forces_of_Colombia
 378 381 4007 and CC
 382 383 4008 a DT
 384 391 4009 smaller JJR

@@ -1,4 +1,4 @@
-0 9 1001 Singapore NNP COU
+0 9 1001 Singapore NNP COU https://en.wikipedia.org/wiki/Singapore
 10 13 1002 was VBD
 14 21 1003 founded VBN
 22 24 1004 as IN
@@ -25,7 +25,7 @@
 136 142 2014 became VBD
 143 154 2015 independent JJ
 154 155 2016 . .
-156 165 3001 Singapore NNP COU
+156 165 3001 Singapore NNP COU https://en.wikipedia.org/wiki/Singapore
 166 178 3002 subsequently RB
 179 185 3003 became VBD
 186 189 3004 one CD

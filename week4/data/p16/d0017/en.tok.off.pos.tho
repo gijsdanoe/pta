@@ -43,8 +43,8 @@
 210 215 3003 March NNP
 216 221 3004 2008, CD
 222 225 3005 the DT
-226 232 3006 United NNP ORG
-233 240 3007 Nations NNS ORG
+226 232 3006 United NNP ORG https://en.wikipedia.org/wiki/United_Nations
+233 240 3007 Nations NNS ORG https://en.wikipedia.org/wiki/United_Nations
 241 246 3008 plans NNS
 247 249 3009 to TO
 250 254 3010 take VB
@@ -59,7 +59,7 @@
 295 300 3019 calls NNS
 301 304 3020 for IN
 305 306 3021 a DT
-307 311 3022 U.N. NNP ORG
+307 311 3022 U.N. NNP ORG https://en.wikipedia.org/wiki/United_Nations
 312 322 3023 conference NN
 323 325 3024 to TO
 326 332 3025 tackle NN
@@ -72,7 +72,7 @@
 364 367 3032 and CC
 368 376 3033 injuries NNS
 376 377 3034 . .
-378 381 4001 VOA NN ENT
+378 381 4001 VOA NN ENT https://en.wikipedia.org/wiki/Voice_of_America
 381 383 4002 's POS
 384 391 4003 Tetiana NN PER
 392 401 4004 Koprowicz NNP PER
@@ -86,4 +86,4 @@
 438 444 4012 safety NN
 445 447 4013 in IN
 448 451 4014 the DT
-452 456 4015 U.S. NNP COU
+452 456 4015 U.S. NNP COU https://en.wikipedia.org/wiki/United_States

@@ -44,7 +44,7 @@
 253 256 3012 key NN
 257 263 3013 report NN
 263 264 3014 . .
-265 268 4001 VOA NN ENT
+265 268 4001 VOA NN ENT https://en.wikipedia.org/wiki/Voice_of_America
 268 270 4002 's POS
 271 277 4003 Robert NNP PER
 278 286 4004 Raffaele NN PER

@@ -8,11 +8,11 @@
 61 64 1008 its PRP$
 65 76 1009 acquisition NN
 77 79 1010 by IN
-80 85 1011 Royal NN ORG
-86 93 1012 Trustco NN ORG
+80 85 1011 Royal NN ORG https://en.wikipedia.org/wiki/Royal_Trust_(Canada)
+86 93 1012 Trustco NN ORG https://en.wikipedia.org/wiki/Royal_Trust_(Canada)
 94 98 1013 Ltd. NNP ORG
 99 101 1014 of IN
-102 109 1015 Toronto NNP CIT
+102 109 1015 Toronto NNP CIT https://en.wikipedia.org/wiki/Toronto
 110 113 1016 for IN
 114 115 1017 $ $
 115 117 1018 27 CD

@@ -1,4 +1,4 @@
-0 4 1001 U.S. NNP COU
+0 4 1001 U.S. NNP COU https://en.wikipedia.org/wiki/United_States
 5 10 1002 stock NN
 11 18 1003 markets NNS
 19 22 1004 are VBP
@@ -42,10 +42,10 @@
 241 250 3004 different JJ
 251 256 3005 story NN
 257 259 3006 in IN
-260 264 3007 Asia NN
+260 264 3007 Asia NN https://en.wikipedia.org/wiki/Asia
 264 265 3008 , ,
 266 271 3009 where WRB
-272 277 3010 Japan NNP COU
+272 277 3010 Japan NNP COU https://en.wikipedia.org/wiki/Japan
 277 279 3011 's POS
 280 289 3012 benchmark NN
 290 296 3013 Nikkei NNP
@@ -55,8 +55,8 @@
 312 319 3017 percent NN
 319 320 3018 , ,
 321 324 3019 and CC
-325 329 3020 Hong NNP CIT
-330 334 3021 Kong NNP CIT
+325 329 3020 Hong NNP CIT https://en.wikipedia.org/wiki/Hong_Kong
+330 334 3021 Kong NNP CIT https://en.wikipedia.org/wiki/Hong_Kong
 334 336 3022 's POS
 337 341 3023 Hang NNP
 342 346 3024 Seng NN

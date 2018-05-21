@@ -1,28 +1,28 @@
 0 6 1001 French JJ
 7 16 1002 President NNP
-17 24 1003 Jacques NNS PER
-25 31 1004 Chirac NN PER
+17 24 1003 Jacques NNS PER https://en.wikipedia.org/wiki/Jacques_Chirac
+25 31 1004 Chirac NN PER https://en.wikipedia.org/wiki/Jacques_Chirac
 32 35 1005 has VBZ
 36 43 1006 offered VBN
 44 47 1007 his PRP$
 48 55 1008 support NN
 56 59 1009 for IN
-60 67 1010 Croatia NN COU
+60 67 1010 Croatia NN COU https://en.wikipedia.org/wiki/Croatia
 67 69 1011 's POS
 70 81 1012 aspirations NNS
 82 85 1013 for IN
-86 94 1014 European JJ ORG
-95 100 1015 Union NNP ORG
+86 94 1014 European JJ ORG https://en.wikipedia.org/wiki/European_Union
+95 100 1015 Union NNP ORG https://en.wikipedia.org/wiki/European_Union
 101 111 1016 membership NN
 111 112 1017 . .
 113 116 2001 Mr. NNP
-117 123 2002 Chirac NN PER
+117 123 2002 Chirac NN PER https://en.wikipedia.org/wiki/Jacques_Chirac
 124 128 2003 told NN
 129 137 2004 visiting VBG
-138 146 2005 Croatian JJ COU
+138 146 2005 Croatian JJ COU https://en.wikipedia.org/wiki/Croatia
 147 152 2006 Prime NNP
 153 161 2007 Minister NNP
-162 165 2008 Ivo NN PER
+162 165 2008 Ivo NN PER 
 166 172 2009 Sander NN PER
 173 177 2010 that IN
 178 181 2011 the DT
@@ -34,7 +34,7 @@
 219 221 2017 be VB
 222 231 2018 respected VBN
 231 232 2019 . .
-233 240 3001 Croatia NN COU
+233 240 3001 Croatia NN COU https://en.wikipedia.org/wiki/Croatia
 240 242 3002 's POS
 243 245 3003 EU NN ORG
 246 256 3004 membership NN
@@ -60,16 +60,16 @@
 368 374 3024 wanted VBD
 375 377 3025 by IN
 378 381 3026 the DT
-382 388 3027 United NNP ORG
-389 396 3028 Nations NNS ORG
-397 400 3029 war NN ORG
+382 388 3027 United NNP ORG https://en.wikipedia.org/wiki/United_Nations
+389 396 3028 Nations NNS ORG https://en.wikipedia.org/wiki/United_Nations
+397 400 3029 war NN ORG 
 401 407 3030 crimes NNS ORG
 408 416 3031 tribunal NN ORG
 416 417 3032 . .
 418 421 4001 Mr. NNP
 422 428 4002 Chirac NN PER
 429 433 4003 says VBZ
-434 441 4004 Croatia NN COU
+434 441 4004 Croatia NN COU https://en.wikipedia.org/wiki/Croatia
 441 443 4005 's POS
 444 449 4006 rapid JJ
 450 458 4007 economic JJ
