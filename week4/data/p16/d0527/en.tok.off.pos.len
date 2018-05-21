@@ -53,7 +53,7 @@
 314 323 3008 destroyed NN
 324 330 3009 during IN
 331 334 3010 the DT
-335 345 3011 earthquake NN
+335 345 3011 earthquake NN NAT https://en.wikipedia.org/wiki/Earthquake
 346 348 3012 in IN
 349 356 3013 January NNP
 357 361 3014 that IN
@@ -69,7 +69,7 @@
 409 413 4004 that IN
 414 420 4005 before IN
 421 424 4006 the DT
-425 435 4007 earthquake NN
+426 435 4007 earthquake NN NAT https://en.wikipedia.org/wiki/Earthquake
 435 436 4008 , ,
 437 441 4009 only RB
 442 446 4010 half NN
