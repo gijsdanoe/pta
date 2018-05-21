@@ -1,0 +1,25 @@
+In some tokens Thomas didn't include the wiki link, while Gijs and Lennart have, in these cases we added them in as Thomas forgot to include the link but did tag these.
+p15/d0012 4001, Gijs tagged Mr as PER, while Lennart and Thomas didn't, we decided that Mr doesn't need to be tagged.
+
+p15/d0046 2011-2015 Thomas didnt tag 2011 and 2015 as part of the whole organisation, majority vote decided to include.
+
+p15/d0077 Thomas didn't tag Wall street as ORG, majority decided to include
+, same with Dow Jones Industrial Average
+
+p15/d0092 Thomas tagged Police as ORG, majority vote decided against.
+Lennart tagged Earthquake as NAT, Majority decided against
+Lennart tagged Tidal wave as NAT, majority decided against
+Lennart tagged quake as NAT, majority decided against
+
+p15/d0112 After debate we decided that Neverland Ranch should both be Ent because of the amusement park.
+
+p15/d0360 Thomas didn't tag Nikkei Index as ORG, majority decided to tag as such
+
+p15/d0653 Lennart tagged Paris region as COU because he thought that was a province, majority decided its a CIT
+
+p15/d0653 Lennart and Gijs tagged 2019-2024 
+
+p15/d0689 Thomas tagged federation as ORG, while Gijs and Lennart tagged Malaysian Federation both as COU, majority decided this to be correct
+Gijs and Lennart tagged Western Europe, we decided this is not a country so we removed this. 
+
+
