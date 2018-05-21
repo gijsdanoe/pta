@@ -1,0 +1,57 @@
+Answers
+
+2.1
+
+Penn Treebank:
+
+Peter - NNP
+really - RB
+liked - VBD
+the - DT
+movies - NNS
+and - CC
+warm - JJ
+pop-corn - NN 
+. - .
+He - PRP
+would - MD
+never - RB
+bring - VB
+Mira - NNP
+with - IN
+him - PRP
+, - ,
+though - RB
+. - .
+
+Brown:
+
+Peter - NP
+really - RB
+liked - VBD
+the - DT
+movies - NNS
+and - CC
+warm - JJ
+pop-corn - NN 
+. - .
+He - PRP
+would - MD
+never - RB
+bring - VB
+Mira - NP
+
+2.4
+
+The 5 most frequest significant (there was a lot of punctuation) POS bigrams:
+('MD', 'VB')
+('EX', 'VBZ')
+('NNPS', 'POS')
+('RBS', 'JJ')
+('TO', 'VB')
+
+Some are interesting but not as surprising because in our language and grammar, some POS tags go together all the time, such as the first one, a model auxiliary and a base verb (should have) and an adverb and an adjective (really big). The most surprising one is the third one, a plural proper noun and a possesive ending, while these do go together, you don´t see them that often.
+
+They do differ from the raw collocations because obviously the POS tags can mean a lot of different words, while the raw collocations only represent that bigram only.
+
+I think this data can be used to understand our language and/or grammar better, and could also be useful to make texts yourself automatically.
