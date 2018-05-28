@@ -1,0 +1,32 @@
+I ran the script ten times for the different randomly chosen wikipedia pages with https://en.wikipedia.org/wiki/Special:Random
+
+		Proportion polysemous words, at least 1, average polysemous, amount of words with 1-9 senses
+
+Bulgaria	1868 proportional, at least one, average of 3.6102915951972556, 465 words showed 0 senses, 582 words showed 1 senses, 393 words showed 2 senses, 259 words showed 3 senses, 268 words showed 4 senses, 270 words showed 5 senses, 145 words showed 6 senses, 118 words showed 7 senses, 128 words showed 8 senses, 100 words showed 9 senses, 52 words showed 10 senses, 135 words showed more than 10 senses
+
+Night of the ripper 70 proportional, at least one, 3.0625, 36 words showed 0 senses, 22 words showed 1 senses, 23 words showed 2 senses, 9 words showed 3 senses, 9 words showed 4 senses, 5 words showed 5 senses, 2 words showed 6 senses, 0 words showed 7 senses, 9 words showed 8 senses, 1 words showed 9 senses, 4 words showed 10 senses,8 words showed more than 10 senses
+
+Catawisa tunnel 246 proportional, average  3.635593220338983,  at least one, 48 words showed 0 senses, 60 words showed 1 senses, 92 words showed 2 senses, 32 words showed 3 senses, 13 words showed 4 senses, 11 words showed 5 senses, 18 words showed 6 senses, 17 words showed 7 senses, 13 words showed 8 senses, 28 words showed 9 senses, 8 words showed 10 senses, 14 words showed more than 10 senses
+
+Radical 27 	21 proportional, at least one, average 3.04, 16 words showed 0 senses, 13 words showed 1 senses, 6 words showed 2 senses, 0 words showed 3 senses, 1 words showed 4 senses, 2 words showed 5 senses, 2 words showed 6 senses, 0 words showed 7 senses, 0 words showed 8 senses, 5 words showed 9 senses, 2 words showed 10 senses
+
+State of West Virginia	143 proportional, at least one, average 4.47222222222222, 12 words showed 0 senses, 25 words showed 1 senses, 26 words showed 2 senses, 18 words showed 3 senses, 35 words showed 4 senses, 7 words showed 5 senses, 8 words showed 6 senses, 6 words showed 7 senses, 27 words showed 8 senses, 1 words showed 9 senses, 4 words showed 10 senses, 11 words showed more than 10 senses
+
+Shawfield Amateurs F.C., proportional 57, at least one, average 4.320987654320987, 16 words showed 0 senses, 8 words showed 1 senses, 17 words showed 2 senses, 4 words showed 3 senses, 4 words showed 4 senses, 3 words showed 5 senses, 4 words showed 6 senses, 4 words showed 7 senses, 6 words showed 8 senses, 1 words showed 9 senses, 5 words showed 10 senses, 9 words showed more than 10 senses
+
+Dashtaabad, Fahraj, proportional 6,  at least one, average 1.8421052631578947, 8 words showed 0 senses, 5 words showed 1 senses, 2 words showed 2 senses, 1 words showed 3 senses, 0 words showed 4 senses, 1 words showed 5 senses, 0 words showed 6 senses, 0 words showed 7 senses, 1 words showed 8 senses, 0 words showed 9 senses, 1 words showed 10 senses, 0 words showed more than 10 senses
+
+Vanara, proportional 140, at least one, average 2.4671280276816607, 88 words showed 0 senses, 61 words showed 1 senses, 48 words showed 2 senses, 25 words showed 3 senses, 19 words showed 4 senses, 11 words showed 5 senses, 5 words showed 6 senses, 2 words showed 7 senses, 9 words showed 8 senses, 2 words showed 9 senses, 9 words showed 10 senses, 10 words showed more than 10 senses
+
+Bluiett, proportional 12, at least one, average  1.8666666666666667, 11 words showed 0 senses, 7 words showed 1 senses, 2 words showed 2 senses, 3 words showed 3 senses, 3 words showed 4 senses, 2 words showed 5 senses, 0 words showed 6 senses, 2 words showed 7 senses, 0 words showed 8 senses, 0 words showed 9 senses, 0 words showed 10 senses, 0 words showed more than 10 senses
+
+Simon Barry, proportional 35, at least one, average 2.816901408450704. 25 words showed 0 senses, 11 words showed 1 senses, 5 words showed 2 senses, 7 words showed 3 senses, 7 words showed 4 senses, 2 words showed 5 senses, 3 words showed 6 senses, 3 words showed 7 senses, 2 words showed 8 senses, 2 words showed 9 senses, 3 words showed 10 senses, 1 words showed more than 10 senses
+
+5: I chose every odd numbered case here to check. The results were correct.
+
+6: it didnt happen that a word was assigned to multiple senses in the same article, I am not sure if the context matters. 
+
+7: Yes
+
+8: I could use a bigger database, a script that automatically accumulates data like this for a large number of random wiki page. 
+
