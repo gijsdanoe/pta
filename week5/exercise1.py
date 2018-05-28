@@ -8,7 +8,7 @@ from nltk.corpus import wordnet
 import wikipedia
 
 def main():
-	wiki = wikipedia.page("Bulgaria")
+	wiki = wikipedia.page("forum_for_the_future")
 	raw = wiki.content
 	sents = nltk.sent_tokenize(raw)
 	words = nltk.word_tokenize(raw)
