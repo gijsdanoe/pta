@@ -1,0 +1,35 @@
+---
+title: Wikification
+author: Lennart
+output: Pdf_document
+---
+# Final Project
+
+The task of detecting entities of interest in some text, and linking them to a database. The target database is wikipedia and the input data we are using is annoted american newspaper data from assignment 4. (a lot of the issues we have to tackle are in the slides from week5).
+
+we have to hand in:
+
+* Wikification system python script which produces output same format as produced manually. 
+* The output files as produced by our system 
+* Evalation script, which is a version of measures.py that can produce the evaluation measures required by this project (see 2.2)
+* Report
+
+## Notes on the slides
+
+These are some of the definitions of entity recoqnition 
+
+* NNP proper noun (specific names, always begin with capital)
+* NN common noun (generic nouns, things that are not specific and thus don't start with a capital unless first word in sentence)
+* CC coordinating conjunctions (nevenschikkend voegwoord, joining words, word groups etc., of the same rank. and/but/or/yet/for/nor/so)
+* IN prepositions and subordinating conjunctions (voorzetsels en onderschikkende voegwoorden)
+* RB adverb
+* JJ adjective
+* CD cardinal number
+* DT determiner
+* PDT predeterminer (all the books, all is pdt)
+* VB verb base form
+* VBD verb past tense
+* VBN verb past participle
+
+
+collocations are combinations of words to co-occur more often than chance, 
