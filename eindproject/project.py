@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-#filename: exercise1.py
-#exercise 1 of week 5
+#filename: eindproject.py
 
 import nltk
 from nltk.wsd import lesk 
@@ -22,7 +21,6 @@ def main():
         #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
     path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
     testfile = open(path + "en.tok.off.pos.test", "w+")
-    #rawfile = open(path + "en.raw", "r")
     rawlist = []
     with open(path + "en.tok.off.pos", "r") as posfile:
         f = posfile.readlines()
