@@ -8,25 +8,13 @@ import wikipedia
 from nltk.tag import StanfordNERTagger
 import os
 from operator import eq 
-
-def tagchecker(list1):
-    #function that check if two adjecent items in a list are the same
-    neighbors = zip(list1, list1[1:])
-    equals = map(lambda xy: x == y, neighbors)
-    print(list(equals))
     
-
-
-
-def main(): 
-    st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
+def tagger(path, st):
+    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
     #open ever file in every folder of our testdir
     #for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
         #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
-    #testing:
-    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
-    #testfile = open("testdir/" + folder + "/" +  folder2 + "/en.tok.off.pos.test", "w+")
-    testfile = open(path + "/en.tok.off.pos.test", "w+")
+
     rawlist = []
     #testing:
     with open(path + "/en.tok.off.pos", "r") as posfile:
@@ -36,9 +24,14 @@ def main():
             rawlist.append(line.split()[3])
 
         rawstring = " ".join(rawlist)
-        #stanford NER tag
+                #stanford NER tag
         l = st.tag(rawstring.split())
-    #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos", "r") as postfile:
+    return l
+        
+def column(l, path):
+    #testfile = open("testdir/" + folder + "/" +  folder2 + "/en.tok.off.pos.test", "w+")
+    testfile = open(path + "/en.tok.off.pos.test", "w+")
+        #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos", "r") as postfile:
     #testing:
     with open(path + "/en.tok.off.pos", "r") as posfile:
         n = 0
@@ -61,6 +54,11 @@ def main():
 
     #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos.test", "r+") as testfile:
         #for row in testfile:
-            
 
+
+def main():
+    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
+    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p05/d0580/"
+    column(tagger(path, st), path)
+    
 main()
