@@ -5,7 +5,7 @@ from nltk.corpus import wordnet as wn
 
 def main():
 #open and read the file, make a list of all nouns
-    path = "/home/gijs/projecttextanalyse/eindproject/testdir/p36/d0500"
+    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p36/d0500"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     with open(path + "/en.tok.off.pos", "r") as posfile:
