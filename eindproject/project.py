@@ -43,8 +43,8 @@ def tagger(path, st):
 
     rawlist = []
     #testing:
+    #with open(path + "/en.tok.off.pos", "r") as posfile:
     with open(path + "/en.tok.off.pos", "r") as posfile:
-    #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos", "r") as posfile:
         f = posfile.readlines()
         for line in f:
             rawlist.append(line.split()[3])
@@ -55,8 +55,8 @@ def tagger(path, st):
     return l
         
 def column(l, path):
-    #testfile = open("testdir/" + folder + "/" +  folder2 + "/en.tok.off.pos.test", "w+")
     testfile = open(path + "/en.tok.off.pos.test", "w+")
+    #testfile = open(path + "/en.tok.off.pos.test", "w+")
         #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos", "r") as postfile:
     #testing:
     with open(path + "/en.tok.off.pos", "r") as posfile:
@@ -110,8 +110,9 @@ def column(l, path):
 
 def main():
     st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
-    column(tagger(path, st), path)
-    #linkadder(tagger(path, st), path) 
-    
+    #path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
+    for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
+        for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
+            path = "testdir" + "/" + folder + "/" + folder2 + "/"
+            column(tagger(path,st),folder2)
 main()
