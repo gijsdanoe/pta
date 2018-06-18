@@ -7,14 +7,31 @@ from nltk.corpus import wordnet
 import wikipedia
 from nltk.tag import StanfordNERTagger
 import os
-from operator import eq 
 
-def tagchecker(list1):
-    #function that check if two adjecent items in a list are the same
-    neighbors = zip(list1, list1[1:])
-    equals = map(lambda xy: x == y, neighbors)
-    print(list(equals))
+def wordgrouper(list1):
+    #compound words are grouped 
     
+    taglist = [Tuple[1] for Tuple in list1]
+    #grouped(tags =  [list(j) for i,j in groupby(taglist)]
+    groupedwords = []
+    for i in range(len(list(enumerate(taglist)))):
+        if list(enumerate(taglist))[i][1] != 'O':
+            x = str(list1[i][0])
+            j = i
+            while list(enumerate(taglist))[j+1][1] != 'O':
+                x = x + " " + str(list1[j+1][0])
+                j += 1
+                if list(enumerate(taglist))[j+1][1] == 'O':
+                    groupedwords.append(x)
+            
+    return groupedwords
+    
+
+def wikilinker(query):
+    try:
+        return wikipedia.page(query).url
+    except wikipedia.DisambiguationError as e:
+        return wikipedia.page(e.options[0]).url
 
 
 
@@ -43,6 +60,7 @@ def main():
     with open(path + "/en.tok.off.pos", "r") as posfile:
         n = 0
         Nerlist = [Tuple[1] for Tuple in l]
+        print(l)
         print(Nerlist)
         for row in posfile:
             #if stanford has an appriopriate tag, add it
