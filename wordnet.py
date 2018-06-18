@@ -8,7 +8,7 @@ from nltk.tag import StanfordNERTagger
 def main():
 #open and read the file, make a list of all nouns
     st = StanfordNERTagger('/home/s3494888/Desktop/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/s3494888/Desktop/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/s3494888/Desktop/projecttextanalyse/eindproject/testdir/p12/d0535"
+    path = "/home/s3494888/Desktop/projecttextanalyse/eindproject/testdir/p16/d0204"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
@@ -77,16 +77,7 @@ def main():
             a = x[value].definition()
             newsynlist.append(a)
     synlist = newsynlist
-    for syn in synlist:
-        if not syn:
-            try:
-                wikipedia.summary(rawlist[synlist.index(syn)], sentences=1)
-            except:
-                pass
-        else:
-            pass
 
-    print(synlist)
 
 
     #open ever file in every folder of our testdir
