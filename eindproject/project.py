@@ -7,7 +7,6 @@ from nltk.corpus import wordnet
 import wikipedia
 from nltk.tag import StanfordNERTagger
 import os
-<<<<<<< HEAD
 
 def wordgrouper(list1):
     #compound words are grouped 
@@ -36,14 +35,8 @@ def wikilinker(query):
 
 
 
-def main(): 
-    st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
-=======
-from operator import eq 
     
 def tagger(path, st):
-    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
->>>>>>> d97bfce737f007ac8f0f483cd40715ad7d7a961a
     #open ever file in every folder of our testdir
     #for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
         #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
@@ -69,30 +62,56 @@ def column(l, path):
     with open(path + "/en.tok.off.pos", "r") as posfile:
         n = 0
         Nerlist = [Tuple[1] for Tuple in l]
-        print(l)
-        print(Nerlist)
+        #print(l)
+        #print(Nerlist)
+        wg = wordgrouper(l)
         for row in posfile:
             #if stanford has an appriopriate tag, add it
+            x = [s for s in wg if row.split()[3] in s]
 
             if l[n][1] != "O": 
                 columns = row.split()
                 columns.append(l[n][1])
-                testfile.write(" ".join(columns))
-                testfile.write("\n")
-                n += 1
+
+                if x:
+                    columns.append(wikilinker(x[0]))
+                    testfile.write(" ".join(columns))
+                    testfile.write("\n")
+                    n += 1
+                else:
+                    testfile.write(" ".join(columns))
+                    testfile.write("\n")
+                    n += 1
+
             else:
                 columns = row.split()
                 testfile.write(" ".join(columns))
                 testfile.write("\n")
                 n += 1
 
+        
+           
     #with open("testdir/" + folder + "/" + folder2 + "/en.tok.off.pos.test", "r+") as testfile:
         #for row in testfile:
+#def linkadder(l, path):
+    #with open(path + "/en.tok.off.pos.test", "w+") as testfile:
+            #wg = wordgrouper(l)
+            #for row in testfile:
+                #print(row)
+                #x = [s for s in wg if row.split()[3] in s]
+                #columns = row.split()
+                #if x:
+                    #columns.append(wikipedia.page(x[0]).url)
+                    #testfile.write(" ".join(columns))
+                    #testfile.write("\n")
+
+
 
 
 def main():
-    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
-    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p05/d0580/"
+    st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
+    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
     column(tagger(path, st), path)
+    #linkadder(tagger(path, st), path) 
     
 main()
