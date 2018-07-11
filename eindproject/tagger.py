@@ -17,7 +17,7 @@ def wikilinker(query):
 def main():
 #open and read the file, make a list of all nouns
     st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0692"
+    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
@@ -206,7 +206,7 @@ def main():
             item[1] = ''.join([i[1] for i in ll if item[0] == i[0]])
     l = [tuple(ls) for ls in l]
            
-    print(l)
+    #print(l)
     with open(path + "/" + "en.tok.off.pos", "r") as posfile:
         n = 0
         Nerlist = [Tuple[1] for Tuple in l]
@@ -224,6 +224,7 @@ def main():
                 for j in groupedwords:
                     if row.split()[3] in j:
                         query = j
+                        print(j)
                     else:
                         query = row.split()[3]
               
@@ -240,6 +241,8 @@ def main():
                         testfile.write("\n")
                         n += 1
                     except TypeError as t:
+                        pass
+                    except json.decoder.JSONDecodeError as j:
                         pass
                 else:
                     testfile.write(" ".join(columns))
