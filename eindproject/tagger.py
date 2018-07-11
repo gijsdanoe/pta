@@ -13,8 +13,8 @@ def wikilinker(query):
         return wikipedia.page(e.options[0]).url
 def main():
 #open and read the file, make a list of all nouns
-    st = StanfordNERTagger('/home/s3494888/Desktop/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/s3494888/Desktop/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/s3494888/Desktop/projecttextanalyse/eindproject/testdir/p16/d0204"
+    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
+    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p05/d0692"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
@@ -129,7 +129,7 @@ def main():
     country = [' nation ', ' republic ', ' monarchy ', ' province ', ' island ' , ' archipelago ']
     sport = [' sport ', 'combat', ' game ']
     natural_places = [' desert ', ' volcano ', ' sea ', ' ocean ',  ' lake ', ' river ', ' jungle ', ' waterfall ', ' glacier ', ' mountain ', ' forest ' , ' crater ', ' cave ', ' canyon ', ' fjord ', ' park ', ' bay ', ' valley ', ' cliff ', ' reef ']
-    entertainment = [' book ', 'magazine', 'film', 'movie', 'song', 'journal', 'newspaper', 'show', 'band']
+    entertainment = [' book ', 'magazine', 'film', 'movie', 'song', 'journal', 'newspaper']
     animal = ['mammal', 'bird', 'fish', 'amphibian', 'reptil', 'crustacean', 'insect', 'carnivore', 'herbivore', 'species', 'breed', 'cattle', 'quadruped', 'pachyderm', 'feline', 'ungulate']
     person = ['born']
     organization = ['organization']
@@ -187,7 +187,7 @@ def main():
             wordlist.append((seconditem[bigramdeflist.index(bigramdf)], 'ANI'))
 
 
-
+    ll = list(set(wordlist))
     l = [list(tpl) for tpl in l]
     for item in l:
         if item[1] == 'MISC':
@@ -197,9 +197,9 @@ def main():
         elif item[1] == 'PERSON':
             item[1] = 'PER'
         elif item[1] =='LOCATION':
-            item[1] = ''.join([i[1] for i in wordlist if item[0] == i[0]])
+            item[1] = ''.join([i[1] for i in ll if item[0] == i[0]])
         elif item [1] == 'O':
-            item[1] = ''.join([i[1] for i in wordlist if item[0] == i[0]])
+            item[1] = ''.join([i[1] for i in ll if item[0] == i[0]])
     l = [tuple(ls) for ls in l]
            
     print(l)

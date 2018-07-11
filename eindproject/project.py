@@ -257,7 +257,7 @@ def gijs(st,path):
     animal = ['mammal', 'bird', 'fish', 'amphibian', 'reptil', 'crustacean', 'insect', 'carnivore', 'herbivore', 'species', 'breed', 'cattle', 'quadruped', 'pachyderm', 'feline', 'ungulate']
     
     person = ['born' ]
-    organization = ['organization']
+    organization = ['organization', 'multinational', 'company']
 #if one of the words appears in the definition of the uni- or bigram, append a tuple to a list with the word and the NER tag
     wordlist = []  
     for deflist in synlist:
@@ -298,9 +298,9 @@ def gijs(st,path):
         elif any(x in bigramdf for x in animal):
             wordlist.append((groupedwords[bigramdeflist.index(bigramdf)], 'ANI'))
         elif any(x in bigramdf for x in organization):
-            wordlist.append((groupedwords[bigramdeflist.index(bigramdf)], 'ANI'))
+            wordlist.append((groupedwords[bigramdeflist.index(bigramdf)], 'ORG'))
         elif any(x in bigramdf for x in person):
-            wordlist.append((groupedwords[bigramdeflist.index(bigramdf)], 'ANI'))
+            wordlist.append((groupedwords[bigramdeflist.index(bigramdf)], 'PER'))
 
 
     return wordlist
@@ -312,12 +312,12 @@ def gijs(st,path):
 
 
 def main():
-    st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
+    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
     #path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580/"
     #for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
         #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
             #path = "/home/lennart/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
-    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p52/d0352"
+    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p52/d0352"
 
     #column(tagger(path,st),path)
     l = tagger(path,st)

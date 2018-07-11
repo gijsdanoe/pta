@@ -7,8 +7,8 @@ from nltk.tag import StanfordNERTagger
 
 def main():
 #open and read the file, make a list of all nouns
-    st = StanfordNERTagger('/home/s3494888/Desktop/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/s3494888/Desktop/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/s3494888/Desktop/projecttextanalyse/eindproject/testdir/p16/d0204"
+    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
+    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p52/d0352"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
