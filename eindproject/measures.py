@@ -12,31 +12,35 @@ def main():
     hello = 0
     hoi = 0
 
-    for file in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611"):
-        myfile = open("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611/en.tok.off.pos.test", "r")
-        goldenstandard = open("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611/en.tok.off.pos.ent", "r")
-
-
-    for line in myfile:
-        columns = line.split()
-
-        if len(columns) < 6:
-            set1.append("NON")
-            list1.append("NO")
-        else:
-            set1.append(columns[5])
-            list1.append("YES")
+    for folder in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/"):
+        for folder2 in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/" + folder):
+            path = "/home/thomas/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
+            
+            with open(path + "/" + "en.tok.off.pos.test", "r") as myfile:
+                f1 = myfile.readlines()
+            with open(path + "/" + "en.tok.off.pos.ent", "r") as goldenstandard:
+                f2 = goldenstandard.readlines()
                 
-    for line in goldenstandard:
-        columns = line.split()
-        
-        if len(columns) < 6:
-            set2.append("NON")
-            list2.append("NO")
-    
-        else:
-            set2.append(columns[5])
-            list2.append("YES")
+                for line in f1:
+                    columns = line.split()
+
+                    if len(columns) < 6:
+                        set1.append("NON")
+                        list1.append("NO")
+                    else:
+                        set1.append(columns[5])
+                        list1.append("YES")
+                            
+                for line in f2:
+                    columns = line.split()
+                    
+                    if len(columns) < 6:
+                        set2.append("NON")
+                        list2.append("NO")
+                
+                    else:
+                        set2.append(columns[5])
+                        list2.append("YES")
 
     total = 0
     finds = 0
