@@ -9,49 +9,50 @@ def main():
     set2 = []
     list1 = []
     list2 = []
+    hello = 0
+    hoi = 0
 
-    for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
-        for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
-            myfile = open("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2 + "/en.tok.off.pos.test", "r")
-            goldenstandard = open("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2 + "/en.tok.off.pos.ent", "r")
+    for file in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611"):
+        myfile = open("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611/en.tok.off.pos.test", "r")
+        goldenstandard = open("/home/thomas/projecttextanalyse/eindproject/testdir/p50/d0611/en.tok.off.pos.ent", "r")
 
-            for line in myfile:
-                columns = line.split()
-                if len(columns) < 6:
-                    set1.append("NON")
-                    list1.append("NO")
-                else:
-                    set1.append(columns[5])
-                    list1.append("YES")
-            for line in myfile2:
-                columns = line.split()
-                if len(columns) < 6:
-                    set2.append("NON")
-                    list2.append("NO")
-                else:
-                    set2.append(columns[5])
-                    list2.append("YES")
+
+    for line in myfile:
+        columns = line.split()
+
+        if len(columns) < 6:
+            set1.append("NON")
+            list1.append("NO")
+        else:
+            set1.append(columns[5])
+            list1.append("YES")
+                
+    for line in goldenstandard:
+        columns = line.split()
+        
+        if len(columns) < 6:
+            set2.append("NON")
+            list2.append("NO")
+    
+        else:
+            set2.append(columns[5])
+            list2.append("YES")
 
     total = 0
     finds = 0
     agr_find = 0
-    for i in range(len(set1)):
-        if set1[i] != "NON" and set2[i] !="NON":
+    print(len(list1))
+    print(len(list2))
+   
+    for item1,item2 in zip(list1, list2):
+        if item1 == item2:
+            total +=1
             agr_find += 1
             finds += 1
-            total += 1
-        elif set1[i] != "NON" and set2[i] == "NON":
-            finds += 1
-            total += 1
-        elif set1[i] == "NON" and set2[i] != "NON":
-            finds += 1
-            total += 1
-        elif set1[i] == "NON" and set2[i] == "NON":
-            finds += 1
-            total += 1
         else:
             total += 1
-              
+            finds += 1
+    
     print("Total agreed finds: {0}\nTotal finds: {1}\nTotal tokens: {2}\n".format(str(agr_find),str(finds),str(total)))
     print("project vs Goldenstandard")
     two_int(list1, list2)
