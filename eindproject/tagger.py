@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import nltk
 from nltk.wsd import lesk 
 from nltk.corpus import wordnet as wn
@@ -11,10 +12,12 @@ def wikilinker(query):
         return wikipedia.page(query).url
     except wikipedia.DisambiguationError as e:
         return wikipedia.page(e.options[0]).url
+    except wikipedia.exceptions.WikipediaException as r:
+        pass
 def main():
 #open and read the file, make a list of all nouns
-    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
-    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p05/d0692"
+    st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
+    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0692"
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
@@ -105,6 +108,7 @@ def main():
                 j += 1
                 if list(enumerate(taglist))[j+1][1] == 'O':
                     groupedwords.append(x)
+    print(groupedwords)
     bigramdeflist = []
     bigramlist = []
     for bigram in groupedwords:
@@ -209,19 +213,34 @@ def main():
         #print(l)
         #print(Nerlist)
         wg = l
+        #tagged = [tuple for tuple in wg if tuple[1] != '']
         for row in posfile:
             #if stanford has an appriopriate tag, add it
             x = [s for s in wg if row.split()[3] in s]
+            #making a list of queries for each individual word
+            query = ""
+            #if row.split()[5] == 'ORG' or row.split()[5] == 'NAT' or row.split()[5] == 'CIT' or row.split()[5] == 'ENT' or row.split()[5] ==  'COU' or row.split()[5] == 'SPO' or row.split()[5] == 'ANI':   
+            if len(row.split()) > 4:
+                for j in groupedwords:
+                    if row.split()[3] in j:
+                        query = j
+                    else:
+                        query = row.split()[3]
+              
 
+                    
             if l[n][1] != "": 
                 columns = row.split()
                 columns.append(l[n][1])
-
+            #if collumn needs wiki link add it, otherwise write as is.
                 if x:
-                    columns.append(wikilinker(x[0]))
-                    testfile.write(" ".join(columns))
-                    testfile.write("\n")
-                    n += 1
+                    try:
+                        columns.append(wikilinker(query))
+                        testfile.write(" ".join(columns))
+                        testfile.write("\n")
+                        n += 1
+                    except TypeError as t:
+                        pass
                 else:
                     testfile.write(" ".join(columns))
                     testfile.write("\n")
