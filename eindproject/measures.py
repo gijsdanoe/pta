@@ -33,6 +33,7 @@ def main():
         if len(columns) < 6:
             set2.append("NON")
             list2.append("NO")
+    
         else:
             set2.append(columns[5])
             list2.append("YES")
@@ -40,7 +41,8 @@ def main():
     total = 0
     finds = 0
     agr_find = 0
-    
+    print(len(list1))
+    print(len(list2))
    
     for item1,item2 in zip(list1, list2):
         if item1 == item2:
