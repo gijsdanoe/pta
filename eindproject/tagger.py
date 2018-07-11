@@ -6,6 +6,7 @@ import wikipedia
 from nltk.tag import StanfordNERTagger
 import itertools
 from collections import OrderedDict
+import os
 
 def wikilinker(query):
     try:
@@ -17,7 +18,11 @@ def wikilinker(query):
 def main():
 #open and read the file, make a list of all nouns
     st = StanfordNERTagger('/home/lennart/Downloads/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/lennart/Downloads/stanford-ner-2018-02-27/stanford-ner.jar')
-    path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580"
+    #path = "/home/lennart/projecttextanalyse/eindproject/testdir/p05/d0580"
+
+    for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
+        for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
+            path = "/home/lennart/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
     testfile = open(path + "/en.tok.off.pos.test", "w+")
     rawlist = []
     rawlist2 = []
@@ -241,9 +246,14 @@ def main():
                         testfile.write("\n")
                         n += 1
                     except TypeError as t:
-                        pass
-                    except json.decoder.JSONDecodeError as j:
-                        pass
+                        testfile.write(" ".join(columns))
+                        testfile.write("\n")
+                        n += 1
+                    except ValueError:
+                        testfile.write(" ".join(columns))
+                        testfile.write("\n")
+                        n += 1
+                        
                 else:
                     testfile.write(" ".join(columns))
                     testfile.write("\n")
