@@ -12,9 +12,9 @@ def main():
     hello = 0
     hoi = 0
 
-    for folder in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/"):
-        for folder2 in os.listdir("/home/thomas/projecttextanalyse/eindproject/testdir/" + folder):
-            path = "/home/thomas/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
+    for folder in os.listdir("/home/thomas/Documents/projecttextanalyse/eindproject/testdir/"):
+        for folder2 in os.listdir("/home/thomas/Documents/projecttextanalyse/eindproject/testdir/" + folder):
+            path = "/home/thomas/Documents/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
             
             with open(path + "/" + "en.tok.off.pos.test", "r") as myfile:
                 f1 = myfile.readlines()

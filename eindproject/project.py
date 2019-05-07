@@ -152,6 +152,7 @@ def gijs(st,path):
                 pass
         rawstring = " ".join(rawlist2)
         l = st.tag(rawstring.split())
+    print(l)
         
 
 #make a list of every wn definition of every word in the raw text list, in case of ambiguity the program calculates the path similarity of every option with every word in the text; he picks the option with the highest cumulative path similarity
@@ -317,7 +318,7 @@ def main():
     #for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
         #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
             #path = "/home/lennart/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
-    path = "/home/thomas/projecttextanalyse/eindproject/testdir/p52/d0352"
+    path = "/home/thomas/Documents/projecttextanalyse/eindproject/testdir/p52/d0352"
 
     #column(tagger(path,st),path)
     l = tagger(path,st)
