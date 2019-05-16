@@ -1,9 +1,9 @@
 1 4 1001 The DT
-5 9 1002 U.S. NNP ORG https://en.wikipedia.org/wiki/United_States
-10 18 1003 Consumer NN ORG https://en.wikipedia.org/wiki/Consumer
-19 26 1004 Product NN ORG https://en.wikipedia.org/wiki/Product_(business)
-27 33 1005 Safety NN ORG https://en.wikipedia.org/wiki/Safety
-34 44 1006 Commission NNP ORG https://en.wikipedia.org/wiki/Commission_(remuneration)
+5 9 1002 U.S. NNP ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
+10 18 1003 Consumer NN ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
+19 26 1004 Product NN ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
+27 33 1005 Safety NN ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
+34 44 1006 Commission NNP ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
 45 46 1007 [ NN
 46 50 1008 CPSC NN ORG https://en.wikipedia.org/wiki/U.S._Consumer_Product_Safety_Commission
 50 51 1009 ] NN
@@ -25,7 +25,7 @@
 140 141 1025 . .
 143 150 2001 Working VBG
 151 155 2002 with IN
-156 160 2003 U.S. NNP
+156 160 2003 U.S. NNP COU https://en.wikipedia.org/wiki/United_States
 161 168 2004 Customs NNS
 169 175 2005 agents NNS
 175 176 2006 , ,
@@ -44,7 +44,7 @@
 256 261 2019 ports NNS
 262 264 2020 in IN
 265 268 2021 the DT
-269 275 2022 United NNP COU https://en.wikipedia.org/wiki/United,_Pennsylvania
+269 275 2022 United NNP COU https://en.wikipedia.org/wiki/United_States
 276 282 2023 States NNS COU https://en.wikipedia.org/wiki/United_States
 283 285 2024 to TO
 286 290 2025 make VB
@@ -57,10 +57,10 @@
 325 329 2032 they PRP
 330 335 2033 enter NN
 336 339 2034 the DT
-340 344 2035 U.S. NNP
+340 344 2035 U.S. NNP COU https://en.wikipedia.org/wiki/United_States
 345 351 2036 market NN
 351 352 2037 . .
 353 356 3001 VOA NN ORG https://en.wikipedia.org/wiki/Voice_of_America
 356 358 3002 's POS
-370 377 3005 reports NNS ORG https://en.wikipedia.org/wiki/Report
-377 378 3006 . . ORG https://en.wikipedia.org/wiki/Full_stop
+370 377 3005 reports NNS
+377 378 3006 . . 

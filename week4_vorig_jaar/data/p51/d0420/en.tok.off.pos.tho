@@ -14,18 +14,18 @@
 84 91 1014 mission NN
 92 94 1015 to TO
 95 98 1016 the DT
-99 112 1017 International NNP ORG https://en.wikipedia.org/wiki/International_(Kevin_Michael_album)
-113 118 1018 Space NN ORG https://en.wikipedia.org/wiki/Space
-119 126 1019 Station NN ORG https://en.wikipedia.org/wiki/Cattle_station
+99 112 1017 International NNP ORG https://en.wikipedia.org/wiki/International_space_station
+113 118 1018 Space NN ORG https://en.wikipedia.org/wiki/International_space_station
+119 126 1019 Station NN ORG https://en.wikipedia.org/wiki/International_space_station
 126 127 1020 . .
 127 135 2001 Endeavor NN
 136 138 2002 is VBZ
 139 145 2003 docked NNS
 146 149 2004 for IN
 150 153 2005 the DT
-154 167 2006 International NNP ORG https://en.wikipedia.org/wiki/International_(Kevin_Michael_album)
-168 173 2007 Space NN ORG https://en.wikipedia.org/wiki/Space
-174 181 2008 Station NN ORG https://en.wikipedia.org/wiki/Cattle_station
+154 167 2006 International NNP ORG https://en.wikipedia.org/wiki/International_space_station
+168 173 2007 Space NN ORG https://en.wikipedia.org/wiki/International_space_station
+174 181 2008 Station NN ORG https://en.wikipedia.org/wiki/International_space_station
 181 182 2009 , ,
 183 188 2010 where WRB
 189 191 2011 it PRP
@@ -44,8 +44,8 @@
 263 264 2024 . .
 266 269 3001 VOA NN ORG https://en.wikipedia.org/wiki/Voice_of_America
 269 271 3002 's POS
-272 276 3003 Paul NNP PER https://en.wikipedia.org/wiki/Out_of_Sight
-277 282 3004 Sisco NN PER https://en.wikipedia.org/wiki/Out_of_Sight
+272 276 3003 Paul NNP PER 
+277 282 3004 Sisco NN PER 
 283 286 3005 has VBZ
 287 292 3006 today NN
 292 294 3007 's POS

@@ -6,7 +6,7 @@
 27 28 1006 a DT
 29 36 1007 lawsuit NN
 37 44 1008 against IN
-45 49 1009 Sean NN PER https://en.wikipedia.org/wiki/Sean
+45 49 1009 Sean NN PER https://en.wikipedia.org/wiki/Sean_Combs
 50 51 1010 " ``
 51 56 1011 Diddy NNP PER https://en.wikipedia.org/wiki/Sean_Combs
 56 57 1012 " ``
@@ -28,8 +28,8 @@
 135 144 1028 Hollywood NNP ENT https://en.wikipedia.org/wiki/Hollywood
 145 154 1029 nightclub NN
 154 155 1030 . .
-156 162 2001 Gerard NNP PER https://en.wikipedia.org/wiki/Gerard
-163 173 2002 Rechnitzer NN PER https://en.wikipedia.org/wiki/Ibolya_Grossman
+156 162 2001 Gerard NNP PER
+163 173 2002 Rechnitzer NN PER
 174 180 2003 claims NNS
 181 183 2004 he PRP
 184 187 2005 and CC
@@ -53,12 +53,12 @@
 293 296 3005 was VBD
 297 305 3006 speaking VBG
 306 308 3007 to TO
-309 319 3008 Rechnitzer NN PER https://en.wikipedia.org/wiki/Ibolya_Grossman
+309 319 3008 Rechnitzer NN PER
 319 321 3009 's POS
 322 332 3010 girlfriend NN
 332 333 3011 . .
 334 336 4001 As IN
-337 347 4002 Rechnitzer NN PER https://en.wikipedia.org/wiki/Ibolya_Grossman
+337 347 4002 Rechnitzer NN PER
 348 358 4003 approached VBN
 358 359 4004 , ,
 360 365 4005 Combs NNS PER https://en.wikipedia.org/wiki/Sean_Combs

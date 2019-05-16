@@ -49,7 +49,7 @@
 288 293 2019 while IN
 294 297 2020 few JJ
 298 302 2021 hold NN
-303 311 2022 al-Qaida NN
+303 311 2022 al-Qaida NN ORG https://en.wikipedia.org/wiki/Al-Qaeda
 312 323 2023 responsible JJ
 323 324 2024 , ,
 325 328 2025 but CC
@@ -89,9 +89,9 @@
 520 524 3020 tank NN
 524 525 3021 , ,
 526 529 3022 the DT
-530 533 3023 New NNP ORG https://en.wikipedia.org/wiki/Boyz_II_Men
-534 541 3024 America NNP ORG https://en.wikipedia.org/wiki/United_States
-542 552 3025 Foundation NN ORG https://en.wikipedia.org/wiki/Foundation_series
+530 533 3023 New NNP ORG https://en.wikipedia.org/wiki/New_America_(organization)
+534 541 3024 America NNP ORG https://en.wikipedia.org/wiki/New_America_(organization)
+542 552 3025 Foundation NN ORG https://en.wikipedia.org/wiki/New_America_(organization)
 552 553 3026 . .
 554 557 4001 VOA NN ORG https://en.wikipedia.org/wiki/Voice_of_America
 557 559 4002 's POS

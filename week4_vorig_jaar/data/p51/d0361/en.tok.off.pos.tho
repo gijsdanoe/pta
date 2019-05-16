@@ -4,8 +4,8 @@
 22 29 1004 scolded VBD
 30 33 1005 her PRP$
 34 41 1006 co-star NN
-42 49 1007 Lindsay VB PER https://en.wikipedia.org/wiki/Clan_Lindsay
-50 55 1008 Lohan NN PER https://en.wikipedia.org/wiki/Electoral_district_of_Logan
+42 49 1007 Lindsay VB PER https://en.wikipedia.org/wiki/Lindsay_Lohan
+50 55 1008 Lohan NN PER https://en.wikipedia.org/wiki/Lindsay_Lohan
 56 61 1009 about IN
 62 65 1010 her PRP$
 66 72 1011 antics NNS
@@ -15,8 +15,8 @@
 84 86 1015 of IN
 87 92 1016 their PRP$
 93 97 1017 film NN
-98 105 1018 Georgia NN ENT https://en.wikipedia.org/wiki/Georgia_(country)
-106 111 1019 Rules NNS ENT https://en.wikipedia.org/wiki/Business_rule
+98 105 1018 Georgia NN ENT https://en.wikipedia.org/wiki/Georgia_Rule
+106 111 1019 Rules NNS ENT https://en.wikipedia.org/wiki/Georgia_Rule
 111 112 1020 . .
 113 116 2001 The DT
 117 124 2002 veteran NN
@@ -26,7 +26,7 @@
 138 140 2006 to TO
 141 145 2007 have VB
 146 150 2008 sent NN
-151 156 2009 Lohan NN PER https://en.wikipedia.org/wiki/Electoral_district_of_Logan
+151 156 2009 Lohan NN PER https://en.wikipedia.org/wiki/Lindsay_Lohan
 157 158 2010 a DT
 159 163 2011 note NN
 164 170 2012 taking VBG
@@ -44,8 +44,8 @@
 237 243 3004 denies NNS
 244 251 3005 reports NNS
 252 256 3006 that IN
-257 264 3007 Lindsay VB PER https://en.wikipedia.org/wiki/Clan_Lindsay
-265 270 3008 Lohan NN PER https://en.wikipedia.org/wiki/Electoral_district_of_Logan
+257 264 3007 Lindsay VB PER https://en.wikipedia.org/wiki/Lindsay_Lohan
+265 270 3008 Lohan NN PER https://en.wikipedia.org/wiki/Lindsay_Lohan
 271 273 3009 is VBZ
 274 277 3010 not RB
 278 285 3011 welcome NN
@@ -61,7 +61,7 @@
 321 323 4002 in IN
 324 331 4003 Atlanta NNP CIT https://en.wikipedia.org/wiki/Atlanta
 331 332 4004 , ,
-333 340 4005 Georgia NN ENT https://en.wikipedia.org/wiki/Georgia_(country)
+333 340 4005 Georgia NN COU https://en.wikipedia.org/wiki/Georgia_(U.S._state)
 340 341 4006 , ,
 342 344 4007 it PRP
 345 349 4008 will MD
@@ -69,7 +69,7 @@
 358 361 4010 the DT
 362 372 4011 non-profit JJ
 373 385 4012 organization NN
-386 392 4013 G-CAPP NN
+386 392 4013 G-CAPP NN ORG
 392 393 4014 , ,
 394 399 4015 which WDT
 400 404 4016 Jane NN PER https://en.wikipedia.org/wiki/Jane_Fonda

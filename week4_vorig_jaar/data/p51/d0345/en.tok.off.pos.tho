@@ -85,15 +85,15 @@
 429 436 5007 greener NN
 437 440 5008 too RB
 440 441 5009 . .
-445 454 6001 Catherine NN PER https://en.wikipedia.org/wiki/Drew_Gilpin_Faust
-455 459 6002 Drew NNP PER https://en.wikipedia.org/wiki/Drew_Gilpin_Faust
+445 454 6001 Catherine NN PER https://en.wikipedia.org/wiki/Catherine_Drew
+455 459 6002 Drew NNP PER https://en.wikipedia.org/wiki/Catherine_Drew
 460 467 6003 visited VBN
 468 469 6004 a DT
 470 476 6005 course NN
 477 481 6006 near IN
 482 488 6007 Oxford NN CIT https://en.wikipedia.org/wiki/Oxford
 488 489 6008 , ,
-490 497 6009 England NNP
+490 497 6009 England NNP COU https://en.wikipedia.org/wiki/England
 498 500 6010 to TO
 501 504 6011 see VB
 505 508 6012 how WRB

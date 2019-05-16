@@ -21,8 +21,8 @@
 116 121 2003 those DT
 122 132 2004 filmmakers NNS
 133 135 2005 is VBZ
-136 139 2006 Sue NN ORG https://en.wikipedia.org/wiki/Door_County_Cherryland_Airport
-140 148 2007 Williams NNS ORG https://en.wikipedia.org/wiki/Williams_(surname)
+136 139 2006 Sue NN PER 
+140 148 2007 Williams NNS PER 
 148 149 2008 , ,
 150 153 2009 who WP
 154 157 2010 has VBZ
@@ -43,9 +43,9 @@
 235 241 3002 latest JJS
 242 246 3003 work NN
 247 248 3004 " ``
-248 253 3005 Young NN
-254 255 3006 & CC
-256 264 3007 Restless NN ORG https://en.wikipedia.org/wiki/Psychomotor_agitation
+248 253 3005 Young NN ENT
+254 255 3006 & CC ENT
+256 264 3007 Restless NN ENT
 265 267 3008 in IN
 268 273 3009 China NNP COU https://en.wikipedia.org/wiki/China
 273 274 3010 " ``
@@ -53,7 +53,7 @@
 279 283 3012 been VBN
 284 293 3013 broadcast NN
 294 296 3014 on IN
-297 306 3015 Frontline NN
+297 306 3015 Frontline NN ENT https://en.wikipedia.org/wiki/Frontline_(U.S._TV_program)
 306 307 3016 , ,
 308 309 3017 a DT
 310 317 3018 program NN
@@ -69,20 +69,20 @@
 367 368 3028 . .
 369 372 4001 VOA NN ORG https://en.wikipedia.org/wiki/Voice_of_America
 372 374 4002 's POS
-375 377 4003 Yi NN PER https://en.wikipedia.org/wiki/Dongyi
-378 382 4004 Suli NN PER https://en.wikipedia.org/wiki/Souli
+375 377 4003 Yi NN PER 
+378 382 4004 Suli NN PER 
 383 389 4005 talked VBD
 390 398 4006 recently RB
 399 403 4007 with IN
-404 407 4008 Sue NN PER https://en.wikipedia.org/wiki/Door_County_Cherryland_Airport
-408 416 4009 Williams NNS PER https://en.wikipedia.org/wiki/Williams_(surname)
+404 407 4008 Sue NN PER 
+408 416 4009 Williams NNS PER 
 417 422 4010 about IN
 423 426 4011 her PRP$
 427 435 4012 interest NN
 436 438 4013 in IN
 439 444 4014 China NNP COU https://en.wikipedia.org/wiki/China
 444 445 4015 . .
-447 453 5001 Elaine NN PER https://en.wikipedia.org/wiki/Elaine_Paige
-454 456 5002 Lu NN PER https://en.wikipedia.org/wiki/Elaine_Paige
-457 465 5003 narrates NNS ENT https://en.wikipedia.org/wiki/Ryan_Reynolds
+447 453 5001 Elaine NN PER 
+454 456 5002 Lu NN PER 
+457 465 5003 narrates NNS
 465 466 5004 . .
