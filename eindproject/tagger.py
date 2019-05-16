@@ -18,11 +18,11 @@ def wikilinker(query):
 def main():
 #open and read the file, make a list of all nouns
     st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
-    for folder in os.listdir("/home/thomas/Documents/projecttextanalyse/eindproject/testdir/"):
+    for folder in os.listdir("/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/"):
 
-        for folder2 in os.listdir("/home/thomas/Documents/projecttextanalyse/eindproject/testdir/" + folder):
+        for folder2 in os.listdir("/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/" + folder):
 
-            path = "/home/thomas/Documents/projecttextanalyse/eindproject/testdir/" + folder + "/" + folder2
+            path = "/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2
 
             rawlist = []
             rawlist2 = []
