@@ -1,7 +1,7 @@
 0 3 1001 The DT
 4 8 1002 Ford NNP ORG https://en.wikipedia.org/wiki/Ford_Motor_Company
-9 14 1003 Motor NNP ORG https://en.wikipedia.org/wiki/General_Motors
-15 22 1004 Company NN ORG https://en.wikipedia.org/wiki/Company
+9 14 1003 Motor NNP ORG https://en.wikipedia.org/wiki/Ford_Motor_Company
+15 22 1004 Company NN ORG https://en.wikipedia.org/wiki/Ford_Motor_Company
 23 27 1005 says VBZ
 28 33 1006 sales NNS
 34 36 1007 of IN

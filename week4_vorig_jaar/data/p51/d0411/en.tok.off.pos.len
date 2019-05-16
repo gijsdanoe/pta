@@ -6,7 +6,7 @@
 28 36 1006 southern JJ
 37 41 1007 Iran NN COU https://en.wikipedia.org/wiki/Iran
 41 42 1008 . .
-44 53 2001 Officials NNS SPO https://en.wikipedia.org/wiki/Official
+44 53 2001 Officials NNS
 54 60 2002 expect VB
 61 65 2003 some DT
 66 72 2004 damage NN
@@ -36,16 +36,16 @@
 203 207 3015 area NN
 208 213 3016 north NN
 214 216 3017 of IN
-217 223 3018 Bandar NN PER https://en.wikipedia.org/wiki/Bandar_Abbas
-224 229 3019 Abbas NN PER https://en.wikipedia.org/wiki/Bandar_Abbas
+217 223 3018 Bandar NN COU https://en.wikipedia.org/wiki/Bandar_Abbas
+224 229 3019 Abbas NN COU https://en.wikipedia.org/wiki/Bandar_Abbas
 229 230 3020 , ,
 231 232 3021 a DT
 233 238 3022 major JJ
 239 243 3023 port NN
 244 246 3024 on IN
 247 250 3025 the DT
-251 258 3026 Persian JJ
-259 263 3027 Gulf NNP NAT https://en.wikipedia.org/wiki/Gulf
+251 258 3026 Persian JJ NAT https://en.wikipedia.org/wiki/Persian_Gulf
+259 263 3027 Gulf NNP NAT https://en.wikipedia.org/wiki/Persian_Gulf
 263 264 3028 . .
 265 269 4001 Iran NN COU https://en.wikipedia.org/wiki/Iran
 269 271 4002 's POS

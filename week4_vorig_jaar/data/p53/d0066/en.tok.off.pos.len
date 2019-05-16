@@ -1,5 +1,5 @@
 0 6 1001 Indian JJ
-7 13 1002 police NNS
+7 13 1002 police NNS ORG https://en.wikipedia.org/wiki/Police
 14 17 1003 say VB
 18 22 1004 they PRP
 23 27 1005 have VB
@@ -29,9 +29,9 @@
 152 160 1029 formerly RB
 161 166 1030 known VBN
 167 169 1031 as IN
-170 176 1032 Bombay NN
+170 176 1032 Bombay NN CIT https://en.wikipedia.org/wiki/Mumbai
 176 177 1033 . .
-178 184 2001 Police NNS
+178 184 2001 Police NNS ORG https://en.wikipedia.org/wiki/Police
 185 188 2002 say VB
 189 193 2003 they PRP
 194 202 2004 arrested VBN
@@ -42,16 +42,16 @@
 218 222 2009 used VBN
 223 226 2010 the DT
 227 232 2011 alias NNS
-233 239 2012 Junaid NN PER https://en.wikipedia.org/wiki/Junaid_Jamshed
+233 239 2012 Junaid NN PER
 239 240 2013 , ,
 241 243 2014 in IN
 244 247 2015 the DT
 248 254 2016 Indian JJ
 255 259 2017 city NN
 260 262 2018 of IN
-263 270 2019 Belgaum NN
+263 270 2019 Belgaum NN CIT https://en.wikipedia.org/wiki/Belgaum
 271 273 2020 in IN
-274 283 2021 Karnataka NNP
+274 283 2021 Karnataka NNP COU https://en.wikipedia.org/wiki/Karnataka
 284 289 2022 state NN
 290 297 2023 Tuesday NNP
 297 298 2024 . .
@@ -88,6 +88,6 @@
 444 446 4019 to TO
 447 453 4020 appear VB
 454 456 4021 in IN
-457 462 4022 court NN SPO https://en.wikipedia.org/wiki/Court
+457 462 4022 court NN
 463 472 4023 Wednesday NNP
 472 473 4024 . .

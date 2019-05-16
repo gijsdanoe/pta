@@ -32,7 +32,7 @@
 176 184 1032 economic JJ
 185 196 1033 integration NN
 197 199 1034 of IN
-200 206 1035 Europe NNP
+200 206 1035 Europe NNP COU https://en.wikipedia.org/wiki/Europe
 206 207 1036 . .
 208 210 2001 It PRP
 211 217 2002 joined VBD
@@ -62,21 +62,21 @@
 311 319 3010 elements NNS
 320 322 3011 of IN
 323 326 3012 the DT
-327 335 3013 European JJ ORG https://en.wikipedia.org/wiki/Europe
-336 341 3014 Union NNP ORG https://en.wikipedia.org/wiki/Students%27_union
+327 335 3013 European JJ ORG https://en.wikipedia.org/wiki/European_Union
+336 341 3014 Union NNP ORG https://en.wikipedia.org/wiki/European_Union
 341 343 3015 's POS
-344 354 3016 Maastricht NN ORG https://en.wikipedia.org/wiki/Maastricht
-355 361 3017 Treaty NN ORG https://en.wikipedia.org/wiki/Treaty
+344 354 3016 Maastricht NN
+355 361 3017 Treaty NN
 361 362 3018 , ,
 363 372 3019 including VBG
 373 376 3020 the DT
-377 385 3021 European JJ ORG https://en.wikipedia.org/wiki/Europe
-386 394 3022 Economic JJ ORG https://en.wikipedia.org/wiki/Economy
-395 398 3023 and CC ORG https://en.wikipedia.org/wiki/Conjunction_(grammar)
-399 407 3024 Monetary JJ ORG https://en.wikipedia.org/wiki/Money
-408 413 3025 Union NNP ORG https://en.wikipedia.org/wiki/Students%27_union
+377 385 3021 European JJ ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
+386 394 3022 Economic JJ ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
+395 398 3023 and CC ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
+399 407 3024 Monetary JJ ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
+408 413 3025 Union NNP ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
 414 415 3026 ( (
-415 418 3027 EMU NN
+415 418 3027 EMU NN ORG https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union
 418 420 3028 ), )
 421 429 3029 European JJ
 430 437 3030 defense NN

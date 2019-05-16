@@ -8,8 +8,8 @@
 43 46 1008 and CC
 47 56 1009 prominent NN
 57 66 1010 economist NN
-67 74 1011 Raymond NN PER https://en.wikipedia.org/wiki/Raymond
-75 80 1012 Barre NN PER https://en.wikipedia.org/wiki/Siad_Barre
+67 74 1011 Raymond NN PER https://en.wikipedia.org/wiki/Raymond_Barre
+75 80 1012 Barre NN PER https://en.wikipedia.org/wiki/Raymond_Barre
 81 85 1013 says VBZ
 86 88 1014 he PRP
 89 92 1015 has VBZ
@@ -22,7 +22,7 @@
 114 115 1022 . .
 116 125 2001 Relatives NNS
 126 130 2002 said VBD
-131 136 2003 Barre NN PER https://en.wikipedia.org/wiki/Siad_Barre
+131 136 2003 Barre NN PER https://en.wikipedia.org/wiki/Raymond_Barre
 137 141 2004 died VBD
 142 150 2005 Saturday NNP
 151 153 2006 at IN
@@ -44,21 +44,21 @@
 244 252 2022 problems NNS
 252 253 2023 . .
 254 257 3001 Mr. NNP
-258 263 3002 Barre NN PER https://en.wikipedia.org/wiki/Siad_Barre
+258 263 3002 Barre NN PER https://en.wikipedia.org/wiki/Raymond_Barre
 264 270 3003 served VBD
 271 273 3004 in IN
 274 277 3005 the DT
-278 286 3006 Industry NN ORG https://en.wikipedia.org/wiki/Industry
-287 295 3007 Ministry NNP ORG https://en.wikipedia.org/wiki/Ministry_(collective_executive)
+278 286 3006 Industry NN ORG https://en.wikipedia.org/wiki/French_Ministry_for_the_Economy_and_Finance
+287 295 3007 Ministry NNP ORG https://en.wikipedia.org/wiki/French_Ministry_for_the_Economy_and_Finance
 296 300 3008 from IN
 301 305 3009 1959 CD
 306 313 3010 through IN
 314 318 3011 1962 CD
 319 325 3012 during IN
 326 335 3013 President NNP
-336 343 3014 Charles NNP PER https://en.wikipedia.org/wiki/Charles
-344 346 3015 de NNS PER https://en.wikipedia.org/wiki/De_(surname)
-347 352 3016 Gaule NN PER https://en.wikipedia.org/wiki/Gauge_(instrument)
+336 343 3014 Charles NNP PER https://nl.wikipedia.org/wiki/Charles_de_Gaulle
+344 346 3015 de NNS PER https://nl.wikipedia.org/wiki/Charles_de_Gaulle
+347 352 3016 Gaule NN PER https://nl.wikipedia.org/wiki/Charles_de_Gaulle
 352 354 3017 's POS
 355 369 3018 administration NN
 369 370 3019 . .
@@ -77,12 +77,12 @@
 431 435 4013 also RB
 436 440 4014 held NN
 441 444 4015 the DT
-451 453 4017 of IN ENT https://en.wikipedia.org/wiki/Air_Finland
+451 453 4017 of IN
 454 458 4018 vice NN
 459 468 4019 president NN
 469 471 4020 of IN
 472 475 4021 the DT
-476 484 4022 European JJ
+476 484 4022 European JJ ORG https://en.wikipedia.org/wiki/European_Union
 485 490 4023 Union NNP ORG https://en.wikipedia.org/wiki/European_Union
 490 491 4024 , , ORG https://en.wikipedia.org/wiki/Comma
 492 498 4025 French JJ
@@ -90,9 +90,9 @@
 509 517 4027 minister NN
 518 521 4028 and CC
 522 527 4029 mayor NN
-528 530 4030 of IN CIT https://en.wikipedia.org/wiki/Air_Finland
-531 535 4031 Lyon NN
-535 536 4032 . . CIT https://en.wikipedia.org/wiki/Full_stop
+528 530 4030 of IN
+531 535 4031 Lyon NN CIT https://nl.wikipedia.org/wiki/Lyon
+535 536 4032 . .
 537 539 5001 He PRP
 540 547 5002 retired VBN
 548 552 5003 from IN

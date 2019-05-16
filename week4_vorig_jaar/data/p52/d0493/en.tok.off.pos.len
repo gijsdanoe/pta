@@ -42,19 +42,19 @@
 224 229 2015 crash NN
 230 238 2016 occurred VBD
 239 243 2017 near IN
-244 250 2018 Badaun NN
+244 250 2018 Badaun NN CIT https://en.wikipedia.org/wiki/Budaun
 250 251 2019 , ,
 252 254 2020 in IN
-255 260 2021 Uttar NN
-261 268 2022 Pradesh NN
+255 260 2021 Uttar NN COU https://en.wikipedia.org/wiki/Uttar_Pradesh
+261 268 2022 Pradesh NN COU https://en.wikipedia.org/wiki/Uttar_Pradesh
 269 274 2023 state NN
 274 275 2024 . .
 277 280 3001 The DT
-281 286 3002 World NN ORG https://en.wikipedia.org/wiki/World
-306 310 3005 says VBZ ORG https://en.wikipedia.org/wiki/Says
-311 316 3006 India NNP ORG https://en.wikipedia.org/wiki/India
+281 286 3002 World NN
+306 310 3005 says VBZ
+311 316 3006 India NNP COU https://en.wikipedia.org/wiki/India
 317 320 3007 has VBZ
-321 324 3008 the DT COU https://en.wikipedia.org/wiki/The
+321 324 3008 the DT
 325 332 3009 highest JJS
 333 339 3010 number NN
 340 342 3011 of IN
@@ -74,9 +74,9 @@
 419 423 4008 each DT
 424 428 4009 year NN
 429 431 4010 on IN
-432 437 4011 India NNP
+432 437 4011 India NNP COU https://en.wikipedia.org/wiki/India
 437 439 4012 's POS
-440 445 4013 roads NNS COU https://en.wikipedia.org/wiki/Road
+440 445 4013 roads NNS
 445 446 4014 , ,
 447 450 4015 due JJ
 451 457 4016 mainly RB

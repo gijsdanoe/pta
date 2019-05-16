@@ -4,7 +4,7 @@
 17 21 1004 poll NN
 22 30 1005 released VBN
 31 33 1006 in IN
-34 42 1007 Paksitan NN
+34 42 1007 Paksitan NN COU https://en.wikipedia.org/wiki/Pakistan
 43 45 1008 on IN
 46 50 1009 June NNP
 51 55 1010 20th JJ
@@ -89,9 +89,9 @@
 520 524 3020 tank NN
 524 525 3021 , ,
 526 529 3022 the DT
-530 533 3023 New NNP ORG https://en.wikipedia.org/wiki/Boyz_II_Men
-534 541 3024 America NNP ORG https://en.wikipedia.org/wiki/United_States
-542 552 3025 Foundation NN ORG https://en.wikipedia.org/wiki/Foundation_series
+530 533 3023 New NNP ORG https://en.wikipedia.org/wiki/New_America_(organization)
+534 541 3024 America NNP https://en.wikipedia.org/wiki/New_America_(organization)
+542 552 3025 Foundation NN
 552 553 3026 . .
 554 557 4001 VOA NN ORG https://en.wikipedia.org/wiki/Voice_of_America
 557 559 4002 's POS

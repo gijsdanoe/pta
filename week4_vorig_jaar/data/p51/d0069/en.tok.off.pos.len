@@ -28,8 +28,8 @@
 153 154 1028 . .
 155 161 2001 Police NNS
 162 173 2002 spokeswoman NN
-186 190 2005 said VBD PER https://en.wikipedia.org/wiki/Sa%E2%80%98id
-191 194 2006 the DT PER https://en.wikipedia.org/wiki/The
+186 190 2005 said VBD
+191 194 2006 the DT
 195 207 2007 unidentified JJ
 208 214 2008 gunmen NNS
 215 219 2009 also RB
@@ -48,5 +48,5 @@
 288 296 2022 Nigerian JJ
 297 302 2023 state NN
 303 305 2024 of IN
-306 312 2025 Rivers NNS
+306 312 2025 Rivers NNS COU https://en.wikipedia.org/wiki/Rivers_State
 312 313 2026 . .
