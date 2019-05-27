@@ -8,7 +8,7 @@
 41 45 1008 with IN
 46 55 1009 disgraced VBN
 56 65 1010 financier NN
-66 73 1011 Bernard NNP PER https://en.wikipedia.org/wiki/Bernard
+66 73 1011 Bernard NNP PER https://en.wikipedia.org/wiki/Bernie_Madoff
 74 80 1012 Madoff NN PER https://en.wikipedia.org/wiki/Bernie_Madoff
 80 81 1013 , ,
 82 86 1014 took VBD

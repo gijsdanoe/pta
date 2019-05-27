@@ -7,7 +7,7 @@
 40 42 1007 of IN
 43 51 1008 Carnival NN ORG https://en.wikipedia.org/wiki/Carnival_Cruise_Line
 52 58 1009 Cruise NN ORG https://en.wikipedia.org/wiki/Carnival_Cruise_Line
-59 64 1010 lines NNS
+59 64 1010 lines NNS ORG https://en.wikipedia.org/wiki/Carnival_Cruise_Line
 65 70 1011 ships NNS
 71 74 1012 for IN
 75 78 1013 the DT
@@ -56,7 +56,7 @@
 312 314 3009 in IN
 315 324 3010 Galveston NNP CIT https://en.wikipedia.org/wiki/Galveston,_Texas
 324 325 3011 , ,
-326 331 3012 Texas NNP
+326 331 3012 Texas NNP COU https://en.wikipedia.org/wiki/Texas
 332 335 3013 and CC
 336 339 3014 the DT
 340 345 3015 other JJ

@@ -29,7 +29,7 @@
 152 154 1029 of IN
 155 160 1030 Bihar NN COU https://en.wikipedia.org/wiki/Bihar
 160 161 1031 . .
-163 169 2001 Police NNS
+163 169 2001 Police NNS ORG https://en.wikipedia.org/wiki/Bihar_Police
 170 172 2002 in IN
 173 176 2003 the DT
 177 187 2004 Aurangabad NN CIT https://en.wikipedia.org/wiki/Aurangabad,_Bihar

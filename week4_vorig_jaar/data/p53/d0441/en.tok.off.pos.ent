@@ -48,8 +48,8 @@
 264 270 3003 served VBD
 271 273 3004 in IN
 274 277 3005 the DT
-278 286 3006 Industry NN ORG
-287 295 3007 Ministry NNP ORG
+278 286 3006 Industry NN ORG https://en.wikipedia.org/wiki/French_Ministry_for_the_Economy_and_Finance
+287 295 3007 Ministry NNP ORG https://en.wikipedia.org/wiki/French_Ministry_for_the_Economy_and_Finance
 296 300 3008 from IN
 301 305 3009 1959 CD
 306 313 3010 through IN

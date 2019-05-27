@@ -25,8 +25,8 @@
 140 141 1025 . .
 143 150 2001 Working VBG
 151 155 2002 with IN
-156 160 2003 U.S. NNP
-161 168 2004 Customs NNS
+156 160 2003 U.S. NNP ORG https://en.wikipedia.org/wiki/United_States_Customs_Service
+161 168 2004 Customs NNS ORG https://en.wikipedia.org/wiki/United_States_Customs_Service
 169 175 2005 agents NNS
 175 176 2006 , ,
 177 180 2007 the DT

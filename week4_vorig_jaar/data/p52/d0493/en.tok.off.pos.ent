@@ -1,5 +1,5 @@
-0 6 1001 Indian JJ
-7 13 1002 police NNS
+0 6 1001 Indian JJ ORG https://en.wikipedia.org/wiki/Indian_Police_Service
+7 13 1002 police NNS ORG https://en.wikipedia.org/wiki/Indian_Police_Service
 14 17 1003 say VB
 18 19 1004 a DT
 20 23 1005 bus NN
