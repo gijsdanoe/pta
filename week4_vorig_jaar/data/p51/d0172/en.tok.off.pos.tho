@@ -73,7 +73,7 @@
 430 439 4005 Argentine NN
 440 449 4006 President NNP
 450 456 4007 Nestor NN PER https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner
-457 465 4008 Kirchner NNP https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner
+457 465 4008 Kirchner NNP PER https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner
 466 469 4009 met NN
 470 474 4010 with IN
 475 478 4011 his PRP$
