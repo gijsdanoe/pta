@@ -1,208 +1,243 @@
-Exercise 3
-
-Total agreed finds: 194
-Total finds: 284
-Total tokens: 1992
+Total agreed finds: 209
+Total finds: 257
+Total tokens: 1987
 
 Lennart vs Gijs
     |         Y |
     |    N    E |
     |    O    S |
 ----+-----------+
- NO |<1738>   4 |
-YES |   14 <236>|
+ NO |<1741>  21 |
+YES |    6 <219>|
 ----+-----------+
 (row = reference; col = test)
 
-TP: 1974 Counter({'NO': 1738, 'YES': 236})
-FN: 18 Counter({'YES': 14, 'NO': 4})
-FP: 18 Counter({'NO': 14, 'YES': 4})
+TP: 1960 Counter({'NO': 1741, 'YES': 219})
+FN: 27 Counter({'NO': 21, 'YES': 6})
+FP: 27 Counter({'YES': 21, 'NO': 6})
 
 fscore
-NO 0.9948483113909559
+NO 0.9923055001424906
 fscore
-YES 0.9632653061224489
+YES 0.9419354838709678
 Lennart vs Thomas
     |         Y |
     |    N    E |
     |    O    S |
 ----+-----------+
- NO |<1712>  30 |
-YES |   55 <195>|
+ NO |<1741>  21 |
+YES |   14 <211>|
 ----+-----------+
 (row = reference; col = test)
 
-TP: 1907 Counter({'NO': 1712, 'YES': 195})
-FN: 85 Counter({'YES': 55, 'NO': 30})
-FP: 85 Counter({'NO': 55, 'YES': 30})
+TP: 1952 Counter({'NO': 1741, 'YES': 211})
+FN: 35 Counter({'NO': 21, 'YES': 14})
+FP: 35 Counter({'YES': 21, 'NO': 14})
 
 fscore
-NO 0.9757765745226561
+NO 0.9900483366505544
 fscore
-YES 0.8210526315789474
+YES 0.9234135667396062
 Gijs vs Thomas
     |         Y |
     |    N    E |
     |    O    S |
 ----+-----------+
- NO |<1721>  31 |
-YES |   46 <194>|
+ NO |<1734>  13 |
+YES |   21 <219>|
 ----+-----------+
 (row = reference; col = test)
 
-TP: 1915 Counter({'NO': 1721, 'YES': 194})
-FN: 77 Counter({'YES': 46, 'NO': 31})
-FP: 77 Counter({'NO': 46, 'YES': 31})
+TP: 1953 Counter({'NO': 1734, 'YES': 219})
+FN: 34 Counter({'YES': 21, 'NO': 13})
+FP: 34 Counter({'NO': 21, 'YES': 13})
 
 fscore
-NO 0.9781187837453822
+NO 0.9902912621359223
 fscore
-YES 0.8344086021505377
+YES 0.9279661016949152
 
 
 
 Lennart vs Gijs
-    |    A    C    C    E    N    N    O    P |
-    |    N    I    O    N    A    O    R    E |
-    |    I    T    U    T    T    N    G    R |
+    |    C    C    E    N    N    O    P    S |
+    |    I    O    N    A    O    R    E    P |
+    |    T    U    T    T    N    G    R    O |
 ----+-----------------------------------------+
-ANI |   <2>   .    .    .    .    .    .    . |
-CIT |    .  <20>   .    .    .    .    .    . |
-COU |    .    1  <45>   .    .    4    .    . |
-ENT |    .    .    .  <28>   .    .    .    . |
-NAT |    .    .    .    .   <1>   7    .    . |
-NON |    .    .    .    2    .<1738>   .    2 |
-ORG |    .    .    1    .    .    3  <81>   1 |
-PER |    .    .    .    .    .    .    .  <56>|
+CIT |  <26>   .    .    1    .    .    .    . |
+COU |    .  <37>   2    .    3    .    2    . |
+ENT |    .    .   <2>   .    .    .    .    . |
+NAT |    .    .    .   <4>   .    .    .    . |
+NON |    1    3    7    .<1741>   9    1    . |
+ORG |    .    .    1    .    2  <64>   .    . |
+PER |    .    .    .    .    .    .  <80>   . |
+SPO |    .    .    .    .    1    .    .   <.>|
 ----+-----------------------------------------+
 (row = reference; col = test)
 
-TP: 1971 Counter({'NON': 1738, 'ORG': 81, 'PER': 56, 'COU': 45, 'ENT': 28, 'CIT': 20, 'ANI': 2, 'NAT': 1})
-FN: 21 Counter({'NAT': 7, 'ORG': 5, 'COU': 5, 'NON': 4, 'ANI': 0, 'PER': 0, 'ENT': 0, 'CIT': 0})
-FP: 21 Counter({'NON': 14, 'PER': 3, 'ENT': 2, 'COU': 1, 'CIT': 1, 'ORG': 0, 'ANI': 0, 'NAT': 0})
+TP: 1954 Counter({'NON': 1741, 'PER': 80, 'ORG': 64, 'COU': 37, 'CIT': 26, 'NAT': 4, 'ENT': 2, 'SPO': 0})
+FN: 33 Counter({'NON': 21, 'COU': 7, 'ORG': 3, 'CIT': 1, 'SPO': 1, 'PER': 0, 'ENT': 0, 'NAT': 0})
+FP: 33 Counter({'ENT': 10, 'ORG': 9, 'NON': 6, 'COU': 3, 'PER': 3, 'CIT': 1, 'NAT': 1, 'SPO': 0})
 
-ANI 1.0
-CIT 0.975609756097561
-COU 0.9375
-ENT 0.9655172413793104
-NAT 0.2222222222222222
-NON 0.9948483113909559
-ORG 0.970059880239521
-PER 0.9739130434782608
-
+CIT 0.9629629629629629
+COU 0.8809523809523809
+ENT 0.2857142857142857
+NAT 0.888888888888889
+NON 0.9923055001424906
+ORG 0.9142857142857143
+PER 0.9815950920245399
+SPO 0
 Lennart vs Thomas
-                                   |    A    C    C    E    N    N    O    P    |
-                                   |    N    I    O    N    A    O    R    E    |
-                                   |    I    T    U    T    T    N    G    R    |
------------------------------------+--------------------------------------------+
-                               ANI |   <2>   .    .    .    .    .    .    .    |
-                               CIT |    .  <20>   .    .    .    .    .    .    |
-                               COU |    .    1  <42>   .    .    6    1    .    |
-                               ENT |    .    .    .  <13>   .   10    3    2    |
-                               NAT |    .    .    .    .   <1>   7    .    .    |
-                               NON |    .    .    5    2    .<1712>  22    .    |
-                               ORG |    2    1    2    .    .   32  <49>   .    |
-                               PER |    .    .    .    .    .    .    .  <56>   |
------------------------------------+--------------------------------------------+
+                                                   |                                            h |
+                                                   |                                            t |
+                                                   |                                            t |
+                                                   |                                            p |
+                                                   |                                            s |
+                                                   |                                            : |
+                                                   |                                            / |
+                                                   |                                            / |
+                                                   |                                            e |
+                                                   |                                            n |
+                                                   |                                            . |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            p |
+                                                   |                                            e |
+                                                   |                                            d |
+                                                   |                                            i |
+                                                   |                                            a |
+                                                   |                                            . |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            g |
+                                                   |                                            / |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            / |
+                                                   |                                            N |
+                                                   |                                            % |
+                                                   |                                            C |
+                                                   |                                            3 |
+                                                   |                                            % |
+                                                   |                                            A |
+                                                   |                                            9 |
+                                                   |                                            s |
+                                                   |                                            t |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            _ |
+                                                   |                                            K |
+                                                   |                                            i |
+                                                   |                                            r |
+                                                   |                                            c |
+                                                   |                                            h |
+                                                   |    C    C    E    N    N    O    P    S    n |
+                                                   |    I    O    N    A    O    R    E    P    e |
+                                                   |    T    U    T    T    N    G    R    O    r |
+---------------------------------------------------+----------------------------------------------+
+                                               CIT |  <22>   .    2    1    2    .    .    .    . |
+                                               COU |    3  <38>   .    .    3    .    .    .    . |
+                                               ENT |    .    .   <2>   .    .    .    .    .    . |
+                                               NAT |    .    .    .   <4>   .    .    .    .    . |
+                                               NON |    2    3    5    2<1741>   8    1    .    . |
+                                               ORG |    .    .    .    .    9  <58>   .    .    . |
+                                               PER |    .    .    .    .    .    .  <79>   .    1 |
+                                               SPO |    .    .    .    .    .    .    .   <1>   . |
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner |    .    .    .    .    .    .    .    .   <.>|
+---------------------------------------------------+----------------------------------------------+
 (row = reference; col = test)
 
-TP: 1895 Counter({'NON': 1712, 'PER': 56, 'ORG': 49, 'COU': 42, 'CIT': 20, 'ENT': 13, 'ANI': 2, 'NAT': 1,})
-FN: 97 Counter({'ORG': 37, 'NON': 30, 'ENT': 15, 'COU': 8, 'NAT': 7, 'ANI': 0, 'PER': 0, 'CIT': 0})
-FP: 97 Counter({'NON': 55, 'ORG': 26, 'COU': 7, 'ANI': 2, 'PER': 2, 'ENT': 2, 'CIT': 2, 'NAT': 0})
+TP: 1945 Counter({'NON': 1741, 'PER': 79, 'ORG': 58, 'COU': 38, 'CIT': 22, 'NAT': 4, 'ENT': 2, 'SPO': 1, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0})
+FN: 42 Counter({'NON': 21, 'ORG': 9, 'COU': 6, 'CIT': 5, 'PER': 1, 'ENT': 0, 'NAT': 0, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FP: 42 Counter({'NON': 14, 'ORG': 8, 'ENT': 7, 'CIT': 5, 'COU': 3, 'NAT': 3, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 1, 'PER': 1, 'SPO': 0})
 
-ANI 0.6666666666666666
-CIT 0.9523809523809523
-COU 0.8484848484848485
-ENT 0.6046511627906976
-NAT 0.2222222222222222
-NON 0.9757765745226561
-ORG 0.608695652173913
-PER 0.9824561403508771
-
+CIT 0.8148148148148148
+COU 0.8941176470588236
+ENT 0.3636363636363636
+NAT 0.7272727272727273
+NON 0.9900483366505544
+ORG 0.8721804511278195
+PER 0.9875
+SPO 1.0
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner 0
 Gijs vs Thomas
-                                   |    A    C    C    E    N    N    O    P    |
-                                   |    N    I    O    N    A    O    R    E    |
-                                   |    I    T    U    T    T    N    G    R    |
------------------------------------+--------------------------------------------+
-                               ANI |   <2>   .    .    .    .    .    .    .    |
-                               CIT |    .  <21>   .    .    .    .    .    .    |
-                               COU |    .    .  <42>   .    .    3    1    .    |
-                               ENT |    .    .    .  <13>   .   12    3    2    |
-                               NAT |    .    .    .    .   <1>   .    .    .    |
-                               NON |    .    .    6    2    .<1721>  22    .    |
-                               ORG |    2    1    1    .    .   28  <49>   .    |
-                               PER |    .    .    .    .    .    3    .  <56>   |
------------------------------------+--------------------------------------------+
+                                                   |                                            h |
+                                                   |                                            t |
+                                                   |                                            t |
+                                                   |                                            p |
+                                                   |                                            s |
+                                                   |                                            : |
+                                                   |                                            / |
+                                                   |                                            / |
+                                                   |                                            e |
+                                                   |                                            n |
+                                                   |                                            . |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            p |
+                                                   |                                            e |
+                                                   |                                            d |
+                                                   |                                            i |
+                                                   |                                            a |
+                                                   |                                            . |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            g |
+                                                   |                                            / |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            / |
+                                                   |                                            N |
+                                                   |                                            % |
+                                                   |                                            C |
+                                                   |                                            3 |
+                                                   |                                            % |
+                                                   |                                            A |
+                                                   |                                            9 |
+                                                   |                                            s |
+                                                   |                                            t |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            _ |
+                                                   |                                            K |
+                                                   |                                            i |
+                                                   |                                            r |
+                                                   |                                            c |
+                                                   |                                            h |
+                                                   |    C    C    E    N    N    O    P    S    n |
+                                                   |    I    O    N    A    O    R    E    P    e |
+                                                   |    T    U    T    T    N    G    R    O    r |
+---------------------------------------------------+----------------------------------------------+
+                                               CIT |  <23>   .    2    .    2    .    .    .    . |
+                                               COU |    1  <35>   .    2    2    .    .    .    . |
+                                               ENT |    .    2   <6>   .    3    1    .    .    . |
+                                               NAT |    .    .    .   <5>   .    .    .    .    . |
+                                               NON |    1    4    1    .<1734>   6    .    1    . |
+                                               ORG |    .    .    .    .   14  <59>   .    .    . |
+                                               PER |    2    .    .    .    .    .  <80>   .    1 |
+                                               SPO |    .    .    .    .    .    .    .   <.>   . |
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner |    .    .    .    .    .    .    .    .   <.>|
+---------------------------------------------------+----------------------------------------------+
 (row = reference; col = test)
 
-TP: 1905 Counter({'NON': 1721, 'PER': 56, 'ORG': 49, 'COU': 42, 'CIT': 21, 'ENT': 13, 'ANI': 2, 'NAT': 1})
-FN: 87 Counter({'ORG': 32, 'NON': 31, 'ENT': 17, 'COU': 4, 'PER': 3, 'ANI': 0, 'CIT': 0, 'NAT': 0})
-FP: 87 Counter({'NON': 46, 'ORG': 26, 'COU': 7, 'ANI': 2, 'PER': 2, 'ENT': 2, 'CIT': 1, 'NAT': 0})
+TP: 1942 Counter({'NON': 1734, 'PER': 80, 'ORG': 59, 'COU': 35, 'CIT': 23, 'ENT': 6, 'NAT': 5, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FN: 45 Counter({'ORG': 14, 'NON': 13, 'ENT': 6, 'COU': 5, 'CIT': 4, 'PER': 3, 'NAT': 0, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FP: 45 Counter({'NON': 21, 'ORG': 7, 'COU': 6, 'CIT': 4, 'ENT': 3, 'NAT': 2, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 1, 'SPO': 1, 'PER': 0})
 
-ANI 0.6666666666666666
-CIT 0.9767441860465117
-COU 0.8842105263157894
-ENT 0.5777777777777778
-NAT 1.0
-NON 0.9781187837453822
-ORG 0.6282051282051282
-PER 0.9572649572649573
-
-Exercise 4
-
-p15
-
-d0012 4001: Gijs tagged Mr as PER, while Lennart and Thomas didn't, we decided that Mr doesn't need to be tagged.
-
-d0046 2011-2015: Thomas didnt tag 2011 and 2015 as part of the whole organisation, majority vote decided to include.
-
-d0077: Thomas didn't tag Wall street as ORG, majority decided to include
-, same with Dow Jones Industrial Average
-
-d0092: Thomas tagged Police as ORG, majority vote decided against.
-Lennart tagged Earthquake as NAT, Majority decided against
-Lennart tagged Tidal wave as NAT, majority decided against
-Lennart tagged quake as NAT, majority decided against
-
-d0112: After debate we decided that Neverland Ranch should both be Ent because of the amusement park.
-
-d0360: Thomas didn't tag Nikkei Index as ORG, majority decided to tag as such
-
-d0653: Lennart tagged Paris region as COU because he thought that was a province, majority decided its a CIT
-
-d0653 Lennart and Gijs tagged 2019-2024 
-
-d0689: Thomas tagged federation as ORG, while Gijs and Lennart tagged Malaysian Federation both as COU, majority decided this to be correct
-Gijs and Lennart tagged Western Europe, we decided this is not a country so we removed this. 
-
-p16
-
-d0017: Thomas forgot to add wiki links to Make Roads Safe.
-
-d0077: Thomes forgot to add wiki links to Colonel Sanders. Also, we were not sure to add wiki links to chicken or fried chicken: in this context it is fried chicken, but we annotated 'chicken' as an animal. So we decided to not add any links to chicken.
-
-d0120: Gijs and Lennart added wiki links to 'district' and 'province' despite not categorizing them: we decided this was wrong and also caused problems with the script as we did not annotate them either. Thomas annotated 'U.S.-led' with a wiki link to United States but we did not agree to this as 'Italian' should not link to Italy either.
-
-d0157: Thomas did not annotate the 'The' part of 'The Philippines'. We decided this right because the wiki links also did not include 'the'.
-
-d0204: Thomas categorized the words in JAMA as ORG whereas Lennart and Gijs had ENT. But because Thomas categorized the abbreviation (JAMA) as ENT, we decided to go with ENT.
-
-d0223: Gijs and Thomas forgot to add the wiki link to 'Arab Contractors'. Also Thomas forgot to annotate 'Arab Contractors'.
-
-d0288: Thomas did not add annotate or add wiki links to Rolling Thunder: understandable because they were talking about a parade and not an organization like the wiki file: however we decided to go with the link. Also Lennart annotated Rolling Thunder different two times: ORG and ENT. We ultimately went with ORG because it matches the wiki link. Thomas and Gijs annotated just 'Vietnam' in 'Vietnam Veterans memorial' and Gijs just 'Lincoln' in 'Lincoln memorial' (Thomas did not annotate this at all). Lennart annotated and added the wiki links in the right way, linking to the page of the memorial instead of the country or person alone. Thomas also just annotate 'Paul Revere' as PER while Lennart and Gijs had ENT for the whole band. In this context it is the band name so we went with ENT.
-
-
-d0292: Thomas annotated 'human rights organization' with ORG and added a wiki link to a list with human rights organizations. We did not agree with this. Also, Thomas and Lennart annotated Africa as a COU, but since Africa is a continent, this is wrong.
-
-d0420: Thomas added a wiki link to 'Washington' which links to a page which lists multiple possibilities. This is not accurate enough.
-
-d0455: Thomas forgot to annotate 'National Liberation Forces'.
-
-d0527: Lennart annotated 'earthquake' as NAT which we did not agree to because it is not a natural place. Also Thomas forgot to add wiki links to 'IDB'.
-
-d0659: Thomas annotated 'police' as ORG. We did understand it, but we did not agree to it because it does not fit into the examples given, which were mostly companies etc.
-
-d0686: Thomas forgot to annotate 'Pacific First Financial Corp.' also Thomas added the right wiki link to 'Royal Trust'. They got taken over by the Royal Bank of Canada so Gijs and Lennart added that link, but we think Thomas' link is more accurate. Thomas however did not annotate the Ltd. part, but we decided to do it anyway.
-
-
-
+CIT 0.8518518518518519
+COU 0.8641975308641976
+ENT 0.5714285714285715
+NAT 0.8333333333333333
+NON 0.9902912621359223
+ORG 0.8489208633093526
+PER 0.9815950920245399
+SPO 0
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner 0

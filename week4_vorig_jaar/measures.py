@@ -10,13 +10,13 @@ def main():
     set3 = []
     list1 = []
     list2 = []
-    list3 = [] 
+    list3 = []
 
-    for folder in os.listdir("/home/lennart/projecttextanalyse/week4/data/"):
-        for folder2 in os.listdir("/home/lennart/projecttextanalyse/week4/data/" + folder):
-            myfile = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.len", "r")
-            myfile2 = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.gijs", "r")
-            myfile3 = open("/home/lennart/projecttextanalyse/week4/data/" + folder + "/" + folder2 + "/en.tok.off.pos.tho", "r")
+    for folder in os.listdir("/home/lennart/school/projectta/projecttextanalyse/week4_vorig_jaar/data/"):
+        for folder2 in os.listdir("/home/lennart/school/projectta/projecttextanalyse/week4_vorig_jaar/data/" + folder):
+            myfile = open("/home/lennart/school/projectta/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2 + "/en.tok.off.pos.len", "r")
+            myfile2 = open("/home/lennart/school/projectta/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2 + "/en.tok.off.pos.gijs", "r")
+            myfile3 = open("/home/lennart/school/projectta/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2 + "/en.tok.off.pos.tho", "r")
             for line in myfile:
                 columns = line.split()
                 if len(columns) < 6:
@@ -45,6 +45,8 @@ def main():
     total = 0
     finds = 0
     agr_find = 0
+    #test function for out of range error 
+    setlength = len(set1)
     for i in range(len(set1)):
         if set1[i] != "NON" and set2[i] !="NON" and set3[i] != "NON":
             agr_find += 1
@@ -70,7 +72,7 @@ def main():
             total += 1
         else:
             total += 1
-              
+
     print("Total agreed finds: {0}\nTotal finds: {1}\nTotal tokens: {2}\n".format(str(agr_find),str(finds),str(total)))
     print("Lennart vs Gijs")
     two_int(list1, list2)
@@ -89,7 +91,7 @@ def main():
 def two_int(list1, list2):
     matrix = ConfusionMatrix(list1, list2)
     print(matrix)
-    
+
     labelSet = set(list1 + list2)
 
     true_positives = Counter()
@@ -107,7 +109,7 @@ def two_int(list1, list2):
     print("TP:", sum(true_positives.values()), true_positives)
     print("FN:", sum(false_negatives.values()), false_negatives)
     print("FP:", sum(false_positives.values()), false_positives)
-    print() 
+    print()
 
     for i in sorted(labelSet):
         if true_positives[i] == 0:
@@ -141,7 +143,7 @@ def two_cla(set1, set2):
     print("TP:", sum(true_positives.values()), true_positives)
     print("FN:", sum(false_negatives.values()), false_negatives)
     print("FP:", sum(false_positives.values()), false_positives)
-    print() 
+    print()
 
     for i in sorted(labelSet):
         if true_positives[i] == 0:

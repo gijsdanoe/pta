@@ -1,0 +1,306 @@
+Total agreed finds: 208
+Total finds: 257
+Total tokens: 1987
+
+Lennart vs Gijs
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1741>  22 |
+YES |    6 <218>|
+----+-----------+
+(row = reference; col = test)
+
+TP: 1959 Counter({'NO': 1741, 'YES': 218})
+FN: 28 Counter({'NO': 22, 'YES': 6})
+FP: 28 Counter({'YES': 22, 'NO': 6})
+
+fscore
+NO 0.992022792022792
+fscore
+YES 0.9396551724137931
+Lennart vs Thomas
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1741>  22 |
+YES |   14 <210>|
+----+-----------+
+(row = reference; col = test)
+
+TP: 1951 Counter({'NO': 1741, 'YES': 210})
+FN: 36 Counter({'NO': 22, 'YES': 14})
+FP: 36 Counter({'YES': 22, 'NO': 14})
+
+fscore
+NO 0.9897669130187606
+fscore
+YES 0.9210526315789473
+Gijs vs Thomas
+    |         Y |
+    |    N    E |
+    |    O    S |
+----+-----------+
+ NO |<1734>  13 |
+YES |   21 <219>|
+----+-----------+
+(row = reference; col = test)
+
+TP: 1953 Counter({'NO': 1734, 'YES': 219})
+FN: 34 Counter({'YES': 21, 'NO': 13})
+FP: 34 Counter({'NO': 21, 'YES': 13})
+
+fscore
+NO 0.9902912621359223
+fscore
+YES 0.9279661016949152
+
+
+
+Lennart vs Gijs
+                                                         |                                            h |
+                                                         |                                            t |
+                                                         |                                            t |
+                                                         |                                            p |
+                                                         |                                            s |
+                                                         |                                            : |
+                                                         |                                            / |
+                                                         |                                            / |
+                                                         |                                            e |
+                                                         |                                            n |
+                                                         |                                            . |
+                                                         |                                            w |
+                                                         |                                            i |
+                                                         |                                            k |
+                                                         |                                            i |
+                                                         |                                            p |
+                                                         |                                            e |
+                                                         |                                            d |
+                                                         |                                            i |
+                                                         |                                            a |
+                                                         |                                            . |
+                                                         |                                            o |
+                                                         |                                            r |
+                                                         |                                            g |
+                                                         |                                            / |
+                                                         |                                            w |
+                                                         |                                            i |
+                                                         |                                            k |
+                                                         |                                            i |
+                                                         |                                            / |
+                                                         |                                            N |
+                                                         |                                            e |
+                                                         |                                            w |
+                                                         |                                            _ |
+                                                         |                                            A |
+                                                         |                                            m |
+                                                         |                                            e |
+                                                         |                                            r |
+                                                         |                                            i |
+                                                         |                                            c |
+                                                         |                                            a |
+                                                         |                                            _ |
+                                                         |                                            ( |
+                                                         |                                            o |
+                                                         |                                            r |
+                                                         |                                            g |
+                                                         |                                            a |
+                                                         |                                            n |
+                                                         |                                            i |
+                                                         |                                            z |
+                                                         |                                            a |
+                                                         |                                            t |
+                                                         |                                            i |
+                                                         |    C    C    E    N    N    O    P    S    o |
+                                                         |    I    O    N    A    O    R    E    P    n |
+                                                         |    T    U    T    T    N    G    R    O    ) |
+---------------------------------------------------------+----------------------------------------------+
+                                                     CIT |  <26>   .    .    1    .    .    .    .    . |
+                                                     COU |    .  <37>   2    .    3    .    2    .    . |
+                                                     ENT |    .    .   <2>   .    .    .    .    .    . |
+                                                     NAT |    .    .    .   <4>   .    .    .    .    . |
+                                                     NON |    1    3    7    .<1741>  10    1    .    . |
+                                                     ORG |    .    .    1    .    2  <62>   .    .    . |
+                                                     PER |    .    .    .    .    .    .  <80>   .    . |
+                                                     SPO |    .    .    .    .    1    .    .   <.>   . |
+https://en.wikipedia.org/wiki/New_America_(organization) |    .    .    .    .    .    1    .    .   <.>|
+---------------------------------------------------------+----------------------------------------------+
+(row = reference; col = test)
+
+TP: 1952 Counter({'NON': 1741, 'PER': 80, 'ORG': 62, 'COU': 37, 'CIT': 26, 'NAT': 4, 'ENT': 2, 'https://en.wikipedia.org/wiki/New_America_(organization)': 0, 'SPO': 0})
+FN: 35 Counter({'NON': 22, 'COU': 7, 'ORG': 3, 'CIT': 1, 'https://en.wikipedia.org/wiki/New_America_(organization)': 1, 'SPO': 1, 'PER': 0, 'NAT': 0, 'ENT': 0})
+FP: 35 Counter({'ORG': 11, 'ENT': 10, 'NON': 6, 'PER': 3, 'COU': 3, 'NAT': 1, 'CIT': 1, 'https://en.wikipedia.org/wiki/New_America_(organization)': 0, 'SPO': 0})
+
+CIT 0.9629629629629629
+COU 0.8809523809523809
+ENT 0.2857142857142857
+NAT 0.888888888888889
+NON 0.992022792022792
+ORG 0.8985507246376813
+PER 0.9815950920245399
+SPO 0
+https://en.wikipedia.org/wiki/New_America_(organization) 0
+Lennart vs Thomas
+                                                         |                                                 h |
+                                                         |                                                 t |
+                                                         |                                                 t |
+                                                         |                                                 p |
+                                                         |                                                 s |
+                                                         |                                                 : |
+                                                         |                                            h    / |
+                                                         |                                            t    / |
+                                                         |                                            t    e |
+                                                         |                                            p    n |
+                                                         |                                            s    . |
+                                                         |                                            :    w |
+                                                         |                                            /    i |
+                                                         |                                            /    k |
+                                                         |                                            e    i |
+                                                         |                                            n    p |
+                                                         |                                            .    e |
+                                                         |                                            w    d |
+                                                         |                                            i    i |
+                                                         |                                            k    a |
+                                                         |                                            i    . |
+                                                         |                                            p    o |
+                                                         |                                            e    r |
+                                                         |                                            d    g |
+                                                         |                                            i    / |
+                                                         |                                            a    w |
+                                                         |                                            .    i |
+                                                         |                                            o    k |
+                                                         |                                            r    i |
+                                                         |                                            g    / |
+                                                         |                                            /    N |
+                                                         |                                            w    e |
+                                                         |                                            i    w |
+                                                         |                                            k    _ |
+                                                         |                                            i    A |
+                                                         |                                            /    m |
+                                                         |                                            N    e |
+                                                         |                                            %    r |
+                                                         |                                            C    i |
+                                                         |                                            3    c |
+                                                         |                                            %    a |
+                                                         |                                            A    _ |
+                                                         |                                            9    ( |
+                                                         |                                            s    o |
+                                                         |                                            t    r |
+                                                         |                                            o    g |
+                                                         |                                            r    a |
+                                                         |                                            _    n |
+                                                         |                                            K    i |
+                                                         |                                            i    z |
+                                                         |                                            r    a |
+                                                         |                                            c    t |
+                                                         |                                            h    i |
+                                                         |    C    C    E    N    N    O    P    S    n    o |
+                                                         |    I    O    N    A    O    R    E    P    e    n |
+                                                         |    T    U    T    T    N    G    R    O    r    ) |
+---------------------------------------------------------+---------------------------------------------------+
+                                                     CIT |  <22>   .    2    1    2    .    .    .    .    . |
+                                                     COU |    3  <38>   .    .    3    .    .    .    .    . |
+                                                     ENT |    .    .   <2>   .    .    .    .    .    .    . |
+                                                     NAT |    .    .    .   <4>   .    .    .    .    .    . |
+                                                     NON |    2    3    5    2<1741>   9    1    .    .    . |
+                                                     ORG |    .    .    .    .    9  <56>   .    .    .    . |
+                                                     PER |    .    .    .    .    .    .  <79>   .    1    . |
+                                                     SPO |    .    .    .    .    .    .    .   <1>   .    . |
+      https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner |    .    .    .    .    .    .    .    .   <.>   . |
+https://en.wikipedia.org/wiki/New_America_(organization) |    .    .    .    .    .    1    .    .    .   <.>|
+---------------------------------------------------------+---------------------------------------------------+
+(row = reference; col = test)
+
+TP: 1943 Counter({'NON': 1741, 'PER': 79, 'ORG': 56, 'COU': 38, 'CIT': 22, 'NAT': 4, 'ENT': 2, 'SPO': 1, 'https://en.wikipedia.org/wiki/New_America_(organization)': 0, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0})
+FN: 44 Counter({'NON': 22, 'ORG': 9, 'COU': 6, 'CIT': 5, 'PER': 1, 'https://en.wikipedia.org/wiki/New_America_(organization)': 1, 'NAT': 0, 'ENT': 0, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FP: 44 Counter({'NON': 14, 'ORG': 10, 'ENT': 7, 'CIT': 5, 'NAT': 3, 'COU': 3, 'PER': 1, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 1, 'https://en.wikipedia.org/wiki/New_America_(organization)': 0, 'SPO': 0})
+
+CIT 0.8148148148148148
+COU 0.8941176470588236
+ENT 0.3636363636363636
+NAT 0.7272727272727273
+NON 0.9897669130187606
+ORG 0.8549618320610687
+PER 0.9875
+SPO 1.0
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner 0
+https://en.wikipedia.org/wiki/New_America_(organization) 0
+Gijs vs Thomas
+                                                   |                                            h |
+                                                   |                                            t |
+                                                   |                                            t |
+                                                   |                                            p |
+                                                   |                                            s |
+                                                   |                                            : |
+                                                   |                                            / |
+                                                   |                                            / |
+                                                   |                                            e |
+                                                   |                                            n |
+                                                   |                                            . |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            p |
+                                                   |                                            e |
+                                                   |                                            d |
+                                                   |                                            i |
+                                                   |                                            a |
+                                                   |                                            . |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            g |
+                                                   |                                            / |
+                                                   |                                            w |
+                                                   |                                            i |
+                                                   |                                            k |
+                                                   |                                            i |
+                                                   |                                            / |
+                                                   |                                            N |
+                                                   |                                            % |
+                                                   |                                            C |
+                                                   |                                            3 |
+                                                   |                                            % |
+                                                   |                                            A |
+                                                   |                                            9 |
+                                                   |                                            s |
+                                                   |                                            t |
+                                                   |                                            o |
+                                                   |                                            r |
+                                                   |                                            _ |
+                                                   |                                            K |
+                                                   |                                            i |
+                                                   |                                            r |
+                                                   |                                            c |
+                                                   |                                            h |
+                                                   |    C    C    E    N    N    O    P    S    n |
+                                                   |    I    O    N    A    O    R    E    P    e |
+                                                   |    T    U    T    T    N    G    R    O    r |
+---------------------------------------------------+----------------------------------------------+
+                                               CIT |  <23>   .    2    .    2    .    .    .    . |
+                                               COU |    1  <35>   .    2    2    .    .    .    . |
+                                               ENT |    .    2   <6>   .    3    1    .    .    . |
+                                               NAT |    .    .    .   <5>   .    .    .    .    . |
+                                               NON |    1    4    1    .<1734>   6    .    1    . |
+                                               ORG |    .    .    .    .   14  <59>   .    .    . |
+                                               PER |    2    .    .    .    .    .  <80>   .    1 |
+                                               SPO |    .    .    .    .    .    .    .   <.>   . |
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner |    .    .    .    .    .    .    .    .   <.>|
+---------------------------------------------------+----------------------------------------------+
+(row = reference; col = test)
+
+TP: 1942 Counter({'NON': 1734, 'PER': 80, 'ORG': 59, 'COU': 35, 'CIT': 23, 'ENT': 6, 'NAT': 5, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FN: 45 Counter({'ORG': 14, 'NON': 13, 'ENT': 6, 'COU': 5, 'CIT': 4, 'PER': 3, 'NAT': 0, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 0, 'SPO': 0})
+FP: 45 Counter({'NON': 21, 'ORG': 7, 'COU': 6, 'CIT': 4, 'ENT': 3, 'NAT': 2, 'https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner': 1, 'SPO': 1, 'PER': 0})
+
+CIT 0.8518518518518519
+COU 0.8641975308641976
+ENT 0.5714285714285715
+NAT 0.8333333333333333
+NON 0.9902912621359223
+ORG 0.8489208633093526
+PER 0.9815950920245399
+SPO 0
+https://en.wikipedia.org/wiki/N%C3%A9stor_Kirchner 0
