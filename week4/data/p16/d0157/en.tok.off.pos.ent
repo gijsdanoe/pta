@@ -55,7 +55,7 @@
 277 283 3021 record NN
 284 289 3022 highs NNS
 289 290 3023 . .
-293 296 4001 The DT
+293 296 4001 The DT COU https://en.wikipedia.org/wiki/Philippines
 297 308 4002 Philippines NNS COU https://en.wikipedia.org/wiki/Philippines
 309 312 4003 and CC
 313 318 4004 Haiti NNP COU https://en.wikipedia.org/wiki/Haiti

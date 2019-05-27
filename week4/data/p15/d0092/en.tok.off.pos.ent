@@ -11,7 +11,7 @@
 56 62 1011 Sunday NNP
 62 64 1012 's POS
 65 72 1013 massive JJ
-73 83 1014 earthquake NN 
+73 83 1014 earthquake NN
 84 86 1015 to TO
 87 91 1016 make VB
 92 97 1017 their PRP$
@@ -28,8 +28,8 @@
 160 164 2005 fled VBN
 165 170 2006 after IN
 171 172 2007 a DT
-173 178 2008 tidal NN 
-179 183 2009 wave NN 
+173 178 2008 tidal NN
+179 183 2009 wave NN
 184 190 2010 caused VBN
 191 193 2011 by IN
 194 197 2012 the DT
@@ -72,7 +72,7 @@
 407 411 4006 fled VBN
 412 417 4007 after IN
 418 419 4008 a DT
-420 427 4009 tsunami NN NAT https://en.wikipedia.org/wiki/Tsunami
+420 427 4009 tsunami NN
 428 437 4010 destroyed NN
 438 441 4011 the DT
 442 447 4012 walls NNS

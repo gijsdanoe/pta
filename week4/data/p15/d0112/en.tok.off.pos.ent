@@ -11,7 +11,7 @@
 66 68 1011 's POS
 69 78 1012 Neverland NN ENT https://en.wikipedia.org/wiki/Neverland_Ranch
 79 84 1013 Ranch NN ENT https://en.wikipedia.org/wiki/Neverland_Ranch
-85  87 1014 in IN
+85 87 1014 in IN
 88 98 1015 California NNP COU https://en.wikipedia.org/wiki/California
 98 99 1016 . .
 100 110 2001 California NNP COU https://en.wikipedia.org/wiki/California

@@ -7,7 +7,7 @@
 42 44 1007 in IN
 45 48 1008 the DT
 49 54 1009 Paris NNP CIT https://en.wikipedia.org/wiki/Paris
-55 61 1010 region NN 
+55 61 1010 region NN
 62 65 1011 and CC
 66 72 1012 nearby RB
 73 81 1013 Normandy NN COU https://en.wikipedia.org/wiki/Normandy

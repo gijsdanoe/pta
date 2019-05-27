@@ -37,9 +37,9 @@
 202 205 2003 are VBP
 206 214 2004 visiting VBG
 215 218 2005 the DT
-219 226 2006 Vietnam NNP ORG https://en.wikipedia.org/wiki/Vietnam_Veterans_Memorial
-227 235 2007 Veterans NNS ORG https://en.wikipedia.org/wiki/Vietnam_Veterans_Memorial
-236 244 2008 memorial NN ORG https://en.wikipedia.org/wiki/Vietnam_Veterans_Memorial
+219 226 2006 Vietnam NNP COU https://en.wikipedia.org/wiki/Vietnam
+227 235 2007 Veterans NNS
+236 244 2008 memorial NN
 245 251 2009 Sunday NNP
 252 255 2010 and CC
 256 259 2011 are VBP
@@ -47,8 +47,8 @@
 265 274 2013 gathering NN
 275 277 2014 at IN
 278 281 2015 the DT
-282 289 2016 Lincoln NN ORG https://en.wikipedia.org/wiki/Lincoln_Memorial
-290 298 2017 memorial NN ORG https://en.wikipedia.org/wiki/Lincoln_Memorial
+282 289 2016 Lincoln NN PER
+290 298 2017 memorial NN
 299 304 2018 where WRB
 305 310 2019 there RB
 311 315 2020 will MD
