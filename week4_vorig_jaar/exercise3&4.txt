@@ -143,3 +143,79 @@ NON 0.9902912621359223
 ORG 0.8489208633093526
 PER 0.9878048780487805
 SPO 0
+
+
+p51
+
+d0069
+Gijs en Lennart did not add annotate or add wiki links to police, and police is an organization, so we decided to annotate police.
+
+Lennart did not annotate Bonny, but Gijs en Thomas did. Bonny is a town in Nigeria, so it has to be annotated. So we decided to annotate it. 
+
+d0172
+Lennart annotated Nations, because of the NER tagger, so this is wrong. So we deleted it from the golden standard.
+
+d0420
+Lennart annotated another wikipedia link than Gijs and Thomas. But you will be redirected to the same page as Gijs and Thomas, so it is good. 
+
+d0575
+Gijs annotated The Roosevelt Hotel, this is an organization. There was a little discussion, but we decided to annotate the Roosevelt Hotel. 
+
+p52
+
+d0116
+Gijs annotated the Olympics as entertainment, but this is not right. So we deleted this annotation.
+
+And Thomas and Lennart annotated games as sport, but this is also not right. So we also deleted this from the golden standard. 
+
+d0352
+Thomas did not annotate Paksitan, because this name is wrongly spelled. But we did annotate Paksitan after evaluation.
+
+Lennart did not annotate al-Qaida, but this is an organization. So we decided to annotate this after evaluation.
+
+Terror free tomorrow was tagged by Gijs, but no wikipedia link. Because there is no wikipedia link. But it is an organization, so we tagged it with ORG, but without a wikipedia link.
+
+d0493
+Indian Police was only tagged by Thomas, but only with the wikipedia link of Police. So we changed this to the Indian Police Services wikipedia link. 
+
+Thomas did not annotate Badaun, but this is a city so it has to be annotated. 
+
+d0690
+We had a discussion about U.S. Customs. Thomas only tagged U.S. and Gijs and Lennart did not. In the end we chose to annotate U.S. Customs as an organization, with the right wikipedialink: U.S. Customs and border protection.
+
+Thomas did the same for U.S. Markets, but this has to be deleted. 
+
+Akrotiri is a state and not a city. Thomas tagged it as a city, and Gijs and Lennart as a state. 
+
+p53
+
+d0066
+Indian Police was only tagged by Thomas, but only with the wikipedia link of Police. Lennart only tagged police as an organization, and Gijs tagged it as a law inforcement in India. So we changed this to the Indian Police Services wikipedia link. 
+
+Thomas and Lennart annotated Asif Khan, but we don't know if this is the cricket guy. Because in the text they are talking about a cricketer, but we don't know if this is that guy. But on the wikipedia links there is nothing about a murder, so we deleted this from the golden standard. 
+
+Gijs added the wrong wikipedia link of Carnival cruise lines, Lennart did it right. And Thomas did not annotate Carnival cruise lines at all. So we decided to but this with the right wikipedia link in the golden standard. 
+
+Gijs did not annotate Texas as Country. 
+
+d0217
+Gijs and Lennart did not annotate police, but this is an organization. Thomas tagged only police and not Bihar police. So we added it to the golden standard. 
+
+Gijs tagged olympic games as entertainment. But we think that this is not entertainment, so we deleted this from the golden standard. 
+
+Gijs and Thomas annotated Front Line as entertainment, and this is right because it is a TV program. 
+
+Thomas annotated Documentary as entertainment, but this is wrong.
+
+Gijs annotated 'young and restless in China', and this is entertainment because it is a documentary. But there is no wikipedia page of young and restless in China.
+
+d0441
+Lennart annotated the Industry ministry, because it is the french ministry of economic and finance. And this is right, so it is in the golden standard. 
+
+d0689
+Lennart annotated Europe as a COU, but it is a continent, so this is not right. 
+
+Thomas annotated the Maastricht Treaty, but this is not an organization, so we deleted it.
+
+Gijs annotated European defence cooperation and this is right, but Thomas and Lennart did not. So we added it to the golden standard. 
+
