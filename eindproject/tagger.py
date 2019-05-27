@@ -17,12 +17,12 @@ def wikilinker(query):
         pass
 def main():
 #open and read the file, make a list of all nouns
-    st = StanfordNERTagger('/home/thomas/Downloads/stanford-ner-2017-06-09/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/thomas/Downloads/stanford-ner-2017-06-09/stanford-ner.jar')
-    for folder in os.listdir("/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/"):
+    st = StanfordNERTagger('/home/s3494888/Desktop/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/s3494888/Desktop/stanford-ner-2018-02-27/stanford-ner.jar')
+    for folder in os.listdir("/home/s3494888/Desktop/projecttextanalyse/week4_vorig_jaar/data/"):
 
-        for folder2 in os.listdir("/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/" + folder):
+        for folder2 in os.listdir("/home/s3494888/Desktop/projecttextanalyse/week4_vorig_jaar/data/" + folder):
 
-            path = "/home/thomas/Documents/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2
+            path = "/home/s3494888/Desktop/projecttextanalyse/week4_vorig_jaar/data/" + folder + "/" + folder2
 
             rawlist = []
             rawlist2 = []
@@ -213,7 +213,7 @@ def main():
                    
             print(l)
             with open(path + "/" + "en.tok.off.pos", "r") as posfile:
-                with open(path + "/en.tok.off.pos.test", "w+") as testfile:
+                with open(path + "/en.tok.off.pos.gijs", "w+") as testfile:
                     n = 0
                     Nerlist = [Tuple[1] for Tuple in l]
                     #print(l)
