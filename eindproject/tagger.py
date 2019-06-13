@@ -98,9 +98,6 @@ def main():
             #for folder in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/"):
                 #for folder2 in os.listdir("/home/lennart/projecttextanalyse/eindproject/testdir/" + folder):
 
-
-
-
             taglist = [Tuple[1] for Tuple in l]
             #grouped(tags =  [list(j) for i,j in groupby(taglist)]
             groupedwords = []

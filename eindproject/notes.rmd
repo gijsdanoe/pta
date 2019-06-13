@@ -9,14 +9,14 @@ The task of detecting entities of interest in some text, and linking them to a d
 
 we have to hand in:
 
-* Wikification system python script which produces output same format as produced manually. 
-* The output files as produced by our system 
+* Script that chunks the text and wikification system python script which produces output same format as produced manually (tagger.py).
+* The output files as produced by our system
 * Evalation script, which is a version of measures.py that can produce the evaluation measures required by this project (see 2.2)
 * Report
 
 ## Notes on the slides
 
-These are some of the definitions of entity recoqnition 
+These are some of the definitions of entity recoqnition
 
 * NNP proper noun (specific names, always begin with capital)
 * NN common noun (generic nouns, things that are not specific and thus don't start with a capital unless first word in sentence)
@@ -32,4 +32,19 @@ These are some of the definitions of entity recoqnition
 * VBN verb past participle
 
 
-collocations are combinations of words to co-occur more often than chance, 
+collocations are combinations of words to co-occur more often than chance,
+
+notes:
+
+use stanford coreNLP tagger volgens week3 ipv normale stanfordnertagger
+dan kijken hoe goed dat is , als het wel verbetering kan hebben gebruik nltk.ne_chunk voor chunken en dan backtracken via wikipedia summary zoals nu
+
+er zijn python dics voor veel categorieen
+
+bij disambiguation diff ratio met titel van elke disambiguation en titel van de query
+vermenigvuldig dit list(wordtokenize(summary)) en list(tokenize(woorden in de file) en kijken hoeveel woorden overeenkomen
+
+files kunnen we ook iteraten met glob
+
+
+
