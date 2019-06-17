@@ -8,13 +8,30 @@ import itertools
 from collections import OrderedDict
 import os
 
-def wikilinker(query):
+def wikilinker(query, wordlist):
     try:
         return wikipedia.page(query).url
-    except wikipedia.DisambiguationError as e:
-        return wikipedia.page(e.options[0]).url
+    except wikipedia.exceptions.DisambiguationError as e: 
+        ll = []  
+        sumlist = []        
+        for option in e.options:
+            dis = 1/nltk.edit_distance(query, option)
+            ll.append(dis)
+            try:
+                a = nltk.word_tokenize(wikipedia.page(option).summary)
+                match = set(a).intersection(wordlist)
+                sumlist.append(len(match))
+            except:
+                
+                sumlist.append(0)
+        multilist = []
+        for (ws,match) in zip(ll, sumlist):
+            multilist.append(ws*match)
+        maxval = multilist.index(max(multilist))
+        return wikipedia.page(e.options[maxval]).url
     except wikipedia.exceptions.WikipediaException as r:
         pass
+
 def main():
 #open and read the file, make a list of all nouns
     st = StanfordNERTagger('/home/s3494888/Desktop/stanford-ner-2018-02-27/classifiers/english.conll.4class.distsim.crf.ser.gz', '/home/s3494888/Desktop/stanford-ner-2018-02-27/stanford-ner.jar')
@@ -110,7 +127,7 @@ def main():
                         j += 1
                         if list(enumerate(taglist))[j+1][1] == 'O':
                             groupedwords.append(x)
-            print(groupedwords)
+           
             bigramdeflist = []
             bigramlist = []
             for bigram in groupedwords:
@@ -132,7 +149,7 @@ def main():
 
         #lists of all words that could appear in the definitions of the unigrams and bigrams
             city = [' city ', ' village ', ' town ', 'capital']
-            country = [' nation ', ' republic ', ' monarchy ', ' province ', ' island ' , ' archipelago ']
+            country = [' nation ', ' republic ', ' monarchy ', ' province ', ' island ' , ' archipelago ', ' kingdom ']
             sport = [' sport ', 'combat', ' game ']
             natural_places = [' desert ', ' volcano ', ' sea ', ' ocean ',  ' lake ', ' river ', ' jungle ', ' waterfall ', ' glacier ', ' mountain ', ' forest ' , ' crater ', ' cave ', ' canyon ', ' fjord ', ' park ', ' bay ', ' valley ', ' cliff ', ' reef ']
             entertainment = [' book ', 'magazine', 'film', 'movie', 'song', 'journal', 'newspaper']
@@ -208,9 +225,9 @@ def main():
                     item[1] = ''.join([i[1] for i in ll if item[0] == i[0]])
             l = [tuple(ls) for ls in l]
                    
-            print(l)
+            
             with open(path + "/" + "en.tok.off.pos", "r") as posfile:
-                with open(path + "/en.tok.off.pos.gijs", "w+") as testfile:
+                with open(path + "/en.tok.off.pos.test", "w+") as testfile:
                     n = 0
                     Nerlist = [Tuple[1] for Tuple in l]
                     #print(l)
@@ -238,13 +255,29 @@ def main():
                         #if collumn needs wiki link add it, otherwise write as is.
                             if x:
                                 try:
-                                    columns.append(wikilinker(query))
+                                    columns.append(wikilinker(query, wordlist))
                                     testfile.write(" ".join(columns))
                                     testfile.write("\n")
                                     n += 1
                                 except wikipedia.DisambiguationError:
                                     try:
-                                        columns.append(wikipedia.page(e.options[0]).url)
+                                        ll = []  
+                                        sumlist = []        
+                                        for option in e.options:
+                                            dis = 1/nltk.edit_distance(query, option)
+                                            ll.append(dis)
+                                            try:
+                                                a = nltk.word_tokenize(wikipedia.page(option).summary)
+                                                match = set(a).intersection(wordlist)
+                                                sumlist.append(len(match))
+                                            except:
+                                                
+                                                sumlist.append(0)
+                                        multilist = []
+                                        for (ws,match) in zip(ll, sumlist):
+                                            multilist.append(ws*match)
+                                        maxval = multilist.index(max(multilist))
+                                        columns.append(wikipedia.page(e.options[maxval]).url)
 
                                         testfile.write(" ".join(columns))
                                         testfile.write("\n")
