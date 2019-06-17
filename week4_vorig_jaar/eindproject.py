@@ -11,13 +11,25 @@ import os
 def sfNERTagger(rawText):
     '''(sf = stanford) get the raw text from a file and convert that to a list with tuples of each word with a StanFord annotated NER-tag'''
     parser = CoreNLPParser(url='http://localhost:9000', tagtype='ner')
-    return list(parser.tag(rawText.split()))
+    tupleList = list(parser.tag(rawText.split()))
+    #convert list of tuple to list of lists, so we can change tags we dont need
+    NERList = [list(tuple) for tuple in tupleList]
+
+    #change tags we dont need
+    for item in NERList:
+        if item[1] == 'COUNTRY': item[1] = 'COU'
+        elif item[1] == 'PERSON': item[1] = 'PER'
+        elif item[1] == 'CITY': item[1] = 'CIT'
+        elif item[1] == 'ORGANIZATION': item[1] = 'ORG'
+        else: item[1] = ''
+        
+    return NERList
 
 def sfNERWriter(POSFile, NERList):
     '''Takes output of sfNERTagger() -->NERList, iters over the POSFile, if NERList[index][1] is meaningful: add the appropriate tag. create ENTFile and write every line'''
     with open(POSFile, "r") as f1:
         POSLines = f1.readlines()
-    with open(str(POSFile + ".ent"),"w") as f2:
+    with open(str(POSFile + ".test"),"w") as f2:
         for lineNumber, line in enumerate(POSLines):
             line  = line.strip('\n')
             if line.split()[3] == NERList[lineNumber][0]:
